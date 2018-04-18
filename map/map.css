@@ -1,0 +1,29 @@
+/*html {
+    height: 100%;
+}*/
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    cursor: default;
+    width: 100%;
+    height: 90%;
+}
+
+
+#panorama {
+    float: left;
+    width: 1000px;
+    height: 400px;
+  }
+
+#map {
+    float: right;
+    padding: 10px 0 0 10px;
+    width: 150px;
+    height: 380px;
+    display: inline;
+    opacity: 0.6;
+  }
