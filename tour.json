@@ -1,7 +1,7 @@
 {
 	"default": {
 		"author": "Peter Bol & Michael Szonyi",
-		"firstScene": "lu_fam-formal_entrance",
+		"firstScene": "lu_fam-street_to_compound",
 		"sceneFadeDuration": 2000,
 		"autoLoad": true,
 		"fallback": "",
