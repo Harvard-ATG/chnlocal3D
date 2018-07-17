@@ -8,6 +8,7 @@
     "northOffset": -20,
 		"minPitch": -35,
 		"maxPitch": 35,
+		"hotSpotDebug": true,
     "compass": true
 	},
 
