@@ -171,7 +171,17 @@
 		},
 		"lu_fam-dongyin_tang": {
 			"title": "(R) East Chanting Hall, Dongyin Tang, 東吟堂",
-			"panorama": "https://s3.amazonaws.com/oaas-files/chinalocal/original/dd6c26d26568d53e79fa152e98971674.jpg",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/lu_fam-dongyin_tang",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+
 			"panoNorthOffSet": -151,
 			"yaw": 171,
 			"map": {
