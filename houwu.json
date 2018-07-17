@@ -1,0 +1,51 @@
+{
+	"default": {
+		"author": "Peter Bol & Michael Szonyi",
+		"firstScene": "houwu_continuing_blessing_inner",
+		"sceneFadeDuration": 2000,
+		"autoLoad": true,
+		"fallback": "",
+    "northOffset": -20,
+		"minPitch": -35,
+		"maxPitch": 35,
+		"hotSpotDebug": true,
+    "compass": true
+	},
+
+
+	"scenes": {
+		"houwu_continuing_blessing_inner": {
+			"title": "(B) Formal Entrance",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/houwu/houwu_continuing_blessing_inner",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"map": {
+				"position": "175,300"
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"hotSpots": [
+				{
+					"pitch": -15,
+					"yaw": -161,
+					"type": "scene",
+					"text": "(C) His Lordship's Mansion, Daifu Di, 大夫第",
+					"sceneId": "lu_fam-daifu_di"
+				},
+				{
+					"pitch": 6,
+					"yaw": -155,
+					"cssClass": "text-hotspot",
+					"createTooltipArgs": "1240"
+				}
+			]
+		}
+	}
+}
