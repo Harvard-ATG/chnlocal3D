@@ -1,24 +1,24 @@
 {
 	"default": {
 		"author": "Peter Bol & Michael Szonyi",
-		"firstScene": "houwu_continuing_blessing_inner",
+		"firstScene": "houwu_continuing_blessing_reservoir",
 		"sceneFadeDuration": 2000,
 		"autoLoad": true,
 		"fallback": "",
-    "northOffset": -20,
+		"northOffset": -20,
 		"minPitch": -35,
 		"maxPitch": 35,
 		"hotSpotDebug": true,
-    "compass": true
+		"compass": true
 	},
 
 
 	"scenes": {
-		"houwu_continuing_blessing_inner": {
-			"title": "(B) Formal Entrance",
+		"houwu_continuing_blessing_reservoir": {
+			"title": "(A)Houwu Continuing Blessing Reservoir",
 			"type": "multires",
 			"multiRes": {
-					"basePath": "panos/houwu/houwu_continuing_blessing_inner",
+					"basePath": "panos/houwu/houwu_continuing_blessing_reservoir",
 					"path": "/%l/%s%y_%x",
 					"fallbackPath": "/fallback/%s",
 					"extension": "jpg",
@@ -26,24 +26,47 @@
 					"maxLevel": 4,
 					"cubeResolution": 2224
 			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
 			"map": {
 				"position": "175,300"
 			},
-			"panoNorthOffSet": 180,
-			"yaw": -77,
 			"hotSpots": [
 				{
-					"pitch": -15,
-					"yaw": -161,
+					"pitch": -1,
+					"yaw": 27,
 					"type": "scene",
-					"text": "(C) His Lordship's Mansion, Daifu Di, 大夫第",
-					"sceneId": "lu_fam-daifu_di"
-				},
+					"text": "(B) Main Hall",
+					"sceneId": "houwu_continuing_blessing_main_hall",
+					"targetYaw": 74
+				}
+			]
+		},
+		"houwu_continuing_blessing_main_hall": {
+			"title": "(B)Houwu Continuing Blessing Main Hall",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/houwu/houwu_continuing_blessing_main_hall",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "175,300"
+			},
+			"hotSpots": [
 				{
-					"pitch": 6,
-					"yaw": -155,
-					"cssClass": "text-hotspot",
-					"createTooltipArgs": "1240"
+					"pitch": -1,
+					"yaw": -124,
+					"type": "scene",
+					"text": "(A) Reservoir",
+					"sceneId": "houwu_continuing_blessing_reservoir",
+					"targetYaw": -149
 				}
 			]
 		}
