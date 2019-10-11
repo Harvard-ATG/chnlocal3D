@@ -1,56 +1,29 @@
 {
 	"default": {
 		"author": "Peter Bol & Michael Szonyi",
-		"firstScene": "lu_fam-street_to_compound",
+		"firstScene": "bailu_shan_road",
 		"sceneFadeDuration": 2000,
 		"autoLoad": true,
 		"fallback": "",
-    "northOffset": -20,
+		"northOffset": -20,
 		"minPitch": -35,
 		"maxPitch": 35,
 		"hotSpotDebug": true,
-    "compass": true
+		"compass": true
 	},
 
-  "default_extras": {
-		"firstScene": "lu_fam-street_to_compound",
+	"default_extras": {
+		"firstScene": "Road to Bailu",
 		"hotSpotDebug": true,
     "compass": true
   },
 
 	"scenes": {
-		"lu_fam-street_to_compound": {
-			"title": "(A) Street to Lu Family Compound",
+		"bailu_shan_road": {
+			"title": "(A) Road to Bailu",
 			"type": "multires",
 			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-street_to_compound",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": 50,
-			"yaw": 60,
-			"map": {
-				"position": "120,590"
-			},
-			"hotSpots": [
-				{
-					"pitch": -15,
-					"yaw": 60,
-					"type": "scene",
-					"text": "(B) Formal Entrance",
-					"sceneId": "lu_fam-formal_entrance"
-				}
-			]
-		},
-		"lu_fam-formal_entrance": {
-			"title": "(B) Formal Entrance",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-formal_entrance",
+					"basePath": "panos/bailu/bailu_shan_road",
 					"path": "/%l/%s%y_%x",
 					"fallbackPath": "/fallback/%s",
 					"extension": "jpg",
@@ -61,902 +34,112 @@
 			"panoNorthOffSet": 180,
 			"yaw": -77,
 			"map": {
-				"position": "175,590"
-			},
-			"hotSpots": [
-				{
-					"pitch": -15,
-					"yaw": -161,
-					"type": "scene",
-					"text": "(C) His Lordship's Mansion, Daifu Di, 大夫第",
-					"sceneId": "lu_fam-daifu_di"
-				},
-				{
-					"pitch": -7,
-					"yaw": 97,
-					"type": "scene",
-					"text": "(A) Street to Lu Family Compound",
-					"sceneId": "lu_fam-street_to_compound",
-					"targetYaw": -123
-				},
-				{
-					"pitch": 8,
-					"yaw": -161,
-					"cssClass": "text-hotspot",
-					"createTooltipArgs": "1238"
-				},
-				{
-					"pitch": 6,
-					"yaw": -167,
-					"cssClass": "text-hotspot",
-					"createTooltipArgs": "1239"
-				},
-				{
-					"pitch": 6,
-					"yaw": -155,
-					"cssClass": "text-hotspot",
-					"createTooltipArgs": "1240"
-				}
-			]
-		},
-		"lu_fam-daifu_di": {
-			"title": "(C) His Lordship's Mansion, Daifu Di, 大夫第",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-daifu_di",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": 25,
-			"yaw": -8,
-			"map": {
-				"position": "175,470"
-			},
-			"hotSpots": [
-				{
-					"pitch": -10,
-					"yaw": -96,
-					"type": "scene",
-					"text": "(D) Head Gate/Victory Report Gate, Jiebao Men, 捷報門",
-					"sceneId": "lu_fam-jiebao_men"
-				},
-				{
-					"pitch": -10,
-					"yaw": -110,
-					"type": "scene",
-					"text": "(S.1) Lotus Pavilion Academy (North), Heting Shuyuan, 荷亭書院（北）",
-					"sceneId": "lu_fam-lotus_pavilion_north"
-				},
-				{
-					"pitch": -10,
-					"yaw": -181,
-					"type": "scene",
-					"text": "(B) Formal Entrance",
-					"sceneId": "lu_fam-formal_entrance",
-					"targetYaw": 20
-				},
-				{
-					"pitch": -7,
-					"yaw": 7,
-					"type": "scene",
-					"text": "(R) East Chanting Hall, Dongyin Tang, 東吟堂",
-					"sceneId": "lu_fam-dongyin_tang"
-				},
-				{
-					"pitch": -7,
-					"yaw": -9,
-					"type": "scene",
-					"text": "(Q.1) Planting Virtue Front Hall, 樹德堂（前堂）",
-					"sceneId": "lu_fam-planting_virtue_front"
-				},
-				{
-					"pitch": -7,
-					"yaw": -23,
-					"type": "scene",
-					"text": "(K) Virtue Through the Generations Gateway, Shide Menfang, 世德門坊",
-					"sceneId": "lu_fam-shide_mengfang"
-				}
-			]
-		},
-		"lu_fam-jiebao_men": {
-			"title": "(D) Head Gate/Victory Report Gate, Jiebao Men, 捷報門",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-jiebao_men",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": -131,
-			"yaw": 61,
-			"map": {
-				"position": "38,470"
-			},
-			"hotSpots": [
-				{
-					"pitch": -10,
-					"yaw": -115,
-					"type": "scene",
-					"text": "(C) His Lordship's Mansion, Daifu Di, 大夫第",
-					"sceneId": "lu_fam-daifu_di",
-					"targetYaw": 93
-				},
-				{
-					"pitch": -5,
-					"yaw": 151,
-					"type": "scene",
-					"text": "(E) Ceremonial Gate/Glory of the Nation Gate, Guoguang Men, 國光門",
-					"sceneId": "lu_fam-guoguang_men"
-				}
-			]
-		},
-		"lu_fam-dongyin_tang": {
-			"title": "(R) East Chanting Hall, Dongyin Tang, 東吟堂",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-dongyin_tang",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": -151,
-			"yaw": 171,
-			"map": {
-				"position": "175,442"
-			},
-			"hotSpots": [
-				{
-					"pitch": -7,
-					"yaw": -98,
-					"type": "scene",
-					"text": "(C) His Lordship's Mansion, Daifu Di, 大夫第",
-					"sceneId": "lu_fam-daifu_di",
-					"targetYaw": -182
-				}
-			]
-		},
-		"lu_fam-planting_virtue_front": {
-			"title": "(Q.1) Planting Virtue Front Hall, Shude Tang, 樹德堂（前堂）",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-planting_virtue_front",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": 143,
-			"yaw": -123,
-			"map": {
-				"position": "139,430"
-			},
-			"hotSpots": [
-				{
-					"pitch": -7,
-					"yaw": 60,
-					"type": "scene",
-					"text": "(C) His Lordship's Mansion, Daifu Di, 大夫第",
-					"sceneId": "lu_fam-daifu_di",
-					"targetYaw": -182
-				},
-				{
-					"pitch": -7,
-					"yaw": -123,
-					"type": "scene",
-					"text": "(Q.2) Planting Virue Hall, Shude Tang, 樹德堂",
-					"sceneId": "lu_fam-planting_virtue"
-				},
-				{
-					"pitch": 3,
-					"yaw": -123,
-					"cssClass": "text-hotspot",
-					"createTooltipArgs": "1242"
-				}
-			]
-		},
-		"lu_fam-shide_mengfang": {
-			"title": "(K) Virtue Through the Generations Gateway, Shide Menfang, 世德門坊",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-shide_mengfang",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": -150,
-			"yaw": 80,
-			"map": {
-				"position": "98,442"
-			},
-			"hotSpots": [
-				{
-					"pitch": -10,
-					"yaw": -85,
-					"type": "scene",
-					"text": "(C) His Lordship`s Mansion, Daifu Di, 大夫第",
-					"sceneId": "lu_fam-daifu_di",
-					"targetYaw": 178
-				},
-				{
-					"pitch": -10,
-					"yaw": 170,
-					"type": "scene",
-					"text": "(L) Surfeit of Kindness Hall, Dunyu Tang, 惇裕堂",
-					"sceneId": "lu_fam-dunyu_tang"
-				}
-			]
-		},
-		"lu_fam-planting_virtue": {
-			"title": "(Q.2) Planting Virtue Hall, Shude Tang, 樹德堂",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-planting_virtue",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": 115,
-			"yaw": -95,
-			"map": {
-				"position": "139,385"
-			},
-			"hotSpots": [
-				{
-					"pitch": -7,
-					"yaw": -95,
-					"type": "scene",
-					"text": "(Q.3) Planting Virtue Back Hall, Shude Tang, 樹德堂（後堂）",
-					"sceneId": "lu_fam-planting_virtue_back"
-				},
-				{
-					"pitch": -7,
-					"yaw": 82,
-					"type": "scene",
-					"text": "(Q.1) Planting Virtue Front Hall, Shude Tang, 樹德堂（前堂）",
-					"sceneId": "lu_fam-planting_virtue_front",
-					"targetYaw": 59
-				}
-			]
-		},
-		"lu_fam-guoguang_men": {
-			"title": "(E) Ceremonial Gate/Glory of the Nation Gate, Guoguang Men, 國光門",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-guoguang_men",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": -161,
-			"yaw": 181,
-			"map": {
-				"position": "37,390"
+				"position": "120,590"
 			},
 			"hotSpots": [
 				{
 					"pitch": -6,
-					"yaw": 0.4,
-					"type": "scene",
-					"text": "(D) Head Gate/Victory Report Gate, Jiebao Men, 捷報門",
-					"sceneId": "lu_fam-jiebao_men",
-					"targetYaw": -27
-				},
-				{
-					"pitch": -5,
-					"yaw": 181,
-					"type": "scene",
-					"text": "(F) Seriousness and Consonance Hall/Suyong Hall, Suyong Tang, 肅雍堂",
-					"sceneId": "lu_fam-suyong_tang"
-				}
-			]
-		},
-		"lu_fam-suyong_tang": {
-			"title": "(F) Seriousness and Consonance Hall/Suyong Hall, Suyong Tang, 肅雍堂",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-suyong_tang",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": -159,
-			"yaw": 179,
-			"map": {
-				"position": "37,335"
-			},
-			"hotSpots": [
-				{
-					"pitch": -6,
-					"yaw": 18,
-					"type": "scene",
-					"text": "(E) Ceremonial Gate/Glory of the Nation Gate, Guoguang Men, 國光門",
-					"sceneId": "lu_fam-guoguang_men",
-					"targetYaw": 0
-				},
-				{
-					"pitch": -5,
-					"yaw": 180,
-					"type": "scene",
-					"text": "(G) The Hallway, 穿堂",
-					"sceneId": "lu_fam-hallway"
-				},
-				{
-					"pitch": -5,
-					"yaw": 167,
-					"type": "scene",
-					"text": "(T) West Snow Study, Xixue Xuan, 西雪軒",
-					"sceneId": "foo_bar"
-				},
-				{
-					"pitch": 19,
-					"yaw": 179,
-					"cssClass": "text-hotspot",
-					"createTooltipArgs": "1241"
-				}
-			]
-		},
-		"lu_fam-dunyu_tang": {
-			"title": "(L) Surfeit of Kindness Hall, Dunyu Tang, 惇裕堂",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-dunyu_tang",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": 169,
-			"yaw": -149,
-			"map": {
-				"position": "98,420"
-			},
-			"hotSpots": [
-				{
-					"pitch": -6,
-					"yaw": 30,
-					"type": "scene",
-					"text": "(K) Virtue Through the Generations Gateway, Shide Menfang, 世德門坊",
-					"sceneId": "lu_fam-shide_mengfang",
-					"targetYaw": -17
-				},
-				{
-					"pitch": -5,
-					"yaw": -197,
-					"type": "scene",
-					"text": "(M) Cordial Meetings Hall, Jiahui Tang, 嘉會堂",
-					"sceneId": "lu_fam-jiahui_tang"
-				}
-			]
-		},
-		"lu_fam-jiahui_tang": {
-			"title": "(M) Cordial Meetings Hall, Jiahui Tang, 嘉會堂",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-jiahui_tang",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": -152,
-			"yaw": 172,
-			"map": {
-				"position": "98,370"
-			},
-			"hotSpots": [
-				{
-					"pitch": -6,
-					"yaw": -6,
-					"type": "scene",
-					"text": "(L) Surfeit of Kindness Hall, Dunyu Tang, 惇裕堂",
-					"sceneId": "lu_fam-dunyu_tang",
-					"targetYaw": -4
-				},
-				{
-					"pitch": -5,
-					"yaw": 95,
-					"type": "scene",
-					"text": "(N.1) Virtue Through the Generations Back Hall, Shide Tang, 世德堂（後堂）",
-					"sceneId": "lu_fam-virtue_generations_back"
-				}
-			]
-		},
-		"lu_fam-shanqing_tang": {
-			"title": "(O) Good Blessings Hall, Shanqing Tang, 善慶堂",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-shanqing_tang",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": 174,
-			"yaw": -154,
-			"map": {
-				"position": "97,260"
-			},
-			"hotSpots": [
-				{
-					"pitch": -6,
-					"yaw": 28,
-					"type": "scene",
-					"text": "(N.2) Virtue Through the Generations Main Hall, Shide Tang, 世德堂",
-					"sceneId": "lu_fam-virtue_generations_main",
-					"targetYaw": -160
-				},
-				{
-					"pitch": -5,
-					"yaw": 139,
-					"type": "scene",
-					"text": "(P) Pleasant Gatherings Hall, Dunxu Tang, 惇叙堂",
-					"sceneId": "lu_fam-dunxu_tang"
-				}
-			]
-		},
-		"lu_fam-dunxu_tang": {
-			"title": "(P) Pleasant Gatherings Hall, Dunxu Tang, 惇叙堂",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-dunxu_tang",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": -8.5,
-			"yaw": 28.5,
-			"map": {
-				"position": "96,217"
-			},
-			"hotSpots": [
-				{
-					"pitch": -5,
-					"yaw": -151,
-					"type": "scene",
-					"text": "(O) Good Blessings Hall, Shanqing Tang, 善慶堂",
-					"sceneId": "lu_fam-shanqing_tang",
-					"targetYaw": 27
-				},
-				{
-					"pitch": -5,
-					"yaw": -33,
-					"type": "scene",
-					"text": "(J.1) Harmony Through Generations Gate, Shiyong Men, 世雍門",
-					"sceneId": "lu_fam-harmony_generations_gate"
-				}
-			]
-		},
-		"lu_fam-hallway": {
-			"title": "(G) The Hallway, 穿堂",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-hallway",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": -155,
-			"yaw": -185,
-			"map": {
-				"position": "37,250"
-			},
-			"hotSpots": [
-				{
-					"pitch": -6,
-					"yaw": 0.4,
-					"type": "scene",
-					"text": "(F) Seriousness and Consonance Hall/Suyong Hall, Suyong Tan, 肅雍堂",
-					"sceneId": "lu_fam-suyong_tang",
-					"targetYaw": 18
-				},
-				{
-					"pitch": -5,
-					"yaw": 194,
-					"type": "scene",
-					"text": "(H) Long Life Hall, Tongshou Tang, 同壽堂",
-					"sceneId": "lu_fam-tongshou_tang"
-				}
-			]
-		},
-		"lu_fam-tongshou_tang": {
-			"title": "(H) Long Life Hall, Tongshou Tang, 同壽堂",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-tongshou_tang",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": 100,
-			"yaw": -81,
-			"map": {
-				"position": "38,205"
-			},
-			"hotSpots": [
-				{
-					"pitch": -6,
-					"yaw": 102,
-					"type": "scene",
-					"text": "(G) The Hallway, 穿堂",
-					"sceneId": "lu_fam-hallway",
-					"targetYaw": 0.4
-				},
-				{
-					"pitch": -5,
-					"yaw": -81,
-					"type": "scene",
-					"text": "(I) Stone Gate/Enjoy Longevity Hall/Leshou Hall, Leshou Tang, 樂壽堂",
-					"sceneId": "lu_fam-leshou_tang"
-				}
-			]
-		},
-		"lu_fam-leshou_tang": {
-			"title": "(I) Stone Gate/Enjoy Longevity Hall/Leshou Hall, Leshou Tang, 樂壽堂",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-leshou_tang",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": -60,
-			"yaw": 80,
-			"map": {
-				"position": "38,185"
-			},
-			"hotSpots": [
-				{
-					"pitch": -7,
-					"yaw": 81,
-					"type": "scene",
-					"text": "(J.1) Harmony Through Generations Gate, Shiyong Men, 世雍門",
-					"sceneId": "lu_fam-harmony_generations_gate"
-				},
-				{
-					"pitch": -7,
-					"yaw": -93,
-					"type": "scene",
-					"text": "(H) Long Life Hall, Tongshou Tang, 同壽堂",
-					"sceneId": "lu_fam-tongshou_tang",
-					"targetYaw": 101
-				}
-			]
-		},
-		"lu_fam-harmony_generations_gate": {
-			"title": "(J.1) Harmony Through Generations Gate, Shiyong Men, 世雍門",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-harmony_generations_gate",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": -155,
-			"yaw": 175,
-			"map": {
-				"position": "36,160"
-			},
-			"hotSpots": [
-				{
-					"pitch": -7,
 					"yaw": -20,
 					"type": "scene",
-					"text": "(I) Stone Gate/Enjoy Longevity Hall/Leshou Hall, Leshou Tang, 樂壽堂",
-					"sceneId": "lu_fam-leshou_tang",
-					"targetYaw": -95
-				},
-				{
-					"pitch": -7,
-					"yaw": 165,
-					"type": "scene",
-					"text": "(J.2) Harmony Through the Generations Hall, Shiyong Tang, 世雍堂",
-					"sceneId": "lu_fam-harmony_generations_hall"
+					"text": "(B) Hujiao Zen",
+					"sceneId": "bailu_mountain_Hu_Jiao_Zen"
 				}
 			]
 		},
-		"lu_fam-harmony_generations_hall": {
-			"title": "(J.2) Harmony Through the Generations Hall, Shiyong Tang, 世雍堂",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-harmony_generations_hall",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": -132,
-			"yaw": 152,
-			"map": {
-				"position": "35,115"
-			},
-			"hotSpots": [
-				{
-					"pitch": -7,
-					"yaw": -26,
-					"type": "scene",
-					"text": "(J.1) Harmony Through Generations Gate, Shiyong Men, 世雍門",
-					"sceneId": "lu_fam-harmony_generations_gate",
-					"targetYaw": -17
-				},
-				{
-					"pitch": -7,
-					"yaw": 108,
-					"type": "scene",
-					"text": "(J.3) Harmony Through the Generations Middle Hall, , Shiyong Tang, 世雍堂（中堂）",
-					"sceneId": "lu_fam-harmony_generations_middle"
-				}
-			]
-		},
-		"lu_fam-harmony_generations_middle": {
-			"title": "(J.3) Harmony Through the Generations Middle Hall, , Shiyong Tang, 世雍堂（中堂）",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-harmony_generations_middle",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": 195,
-			"yaw": -175,
-			"map": {
-				"position": "35,55"
-			},
-			"hotSpots": [
-				{
-					"pitch": -7,
-					"yaw": 53,
-					"type": "scene",
-					"text": "(J.2) Harmony Through the Generations Hall, Shiyong Tang, 世雍堂",
-					"sceneId": "lu_fam-harmony_generations_hall",
-					"targetYaw": -27
-				},
-				{
-					"pitch": -7,
-					"yaw": -175,
-					"type": "scene",
-					"text": "(J.4) Harmony Through the Generations Back Hall, Shiyong Tang, 世雍堂（後堂）",
-					"sceneId": "lu_fam-harmony_generations_back"
-				}
-			]
-		},
-		"lu_fam-harmony_generations_back": {
-			"title": "(J.4) Harmony Through the Generations Back Hall, Shiyong Tang, 世雍堂（後堂）",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-harmony_generations_back",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": 95,
-			"yaw": -75,
-			"map": {
-				"position": "35,25"
-			},
-			"hotSpots": [
-				{
-					"pitch": -7,
-					"yaw": 106,
-					"type": "scene",
-					"text": "(J.3) Harmony Through the Generations Middle Hall, Shiyong Tang, 世雍堂（中堂）",
-					"sceneId": "lu_fam-harmony_generations_middle",
-					"targetYaw": 8
-				}
-			]
-		},
-		"lu_fam-lotus_pavilion_north": {
-			"title": "(S.1) Lotus Pavilion Academy (North), Heting Shuyuan, 荷亭書院（北）",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-lotus_pavilion_north",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": 49,
-			"yaw": 151,
-			"map": {
-				"position": "142,513"
-			},
-			"hotSpots": [
-				{
-					"pitch": -10,
-					"yaw": -31,
-					"type": "scene",
-					"text": "(C) His Lordship`s Mansion, Daifu Di,大夫第",
-					"sceneId": "lu_fam-daifu_di",
-					"targetYaw": -61
-				},
-				{
-					"pitch": -5,
-					"yaw": 148,
-					"type": "scene",
-					"text": "(S.2) Lotus Pavilion Academy (South), Heting Shuyuan, 荷亭書院（南）",
-					"sceneId": "lu_fam-lotus_pavilion_south"
-				}
-			]
-		},
-		"lu_fam-lotus_pavilion_south": {
-			"title": "(S.2) Lotus Pavilion Academy (South), Heting Shuyuan, 荷亭書院（南）",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-lotus_pavilion_south",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": 74,
-			"yaw": 126,
-			"map": {
-				"position": "142,556"
-			},
-			"hotSpots": [
-				{
-					"pitch": -5,
-					"yaw": -52,
-					"type": "scene",
-					"text": "(S.1) Lotus Pavilion Academy (North), Heting Shuyuan, 荷亭書院（北）",
-					"sceneId": "lu_fam-lotus_pavilion_north",
-					"targetYaw": -30
-				}
-			]
-		},
-		"lu_fam-planting_virtue_back": {
-			"title": "(Q.3) Planting Virtue Back Hall, Shude Tang, 樹德堂（後堂）",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-planting_virtue_back",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": 152,
-			"yaw": -132,
-			"map": {
-				"position": "139,323"
-			},
-			"hotSpots": [
-				{
-					"pitch": -7,
-					"yaw": 47,
-					"type": "scene",
-					"text": "(Q.2) Planting Virue Hall, Shude Tang, 樹德堂",
-					"sceneId": "lu_fam-planting_virtue",
-					"targetYaw": 81
-				}
-			]
-		},
-		"lu_fam-virtue_generations_back": {
-			"title": "(N.1) Virtue Through the Generations Back Hall, Shide Tang, 世徳堂（後堂）",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-virtue_generations_back",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": 165,
-			"yaw": -145,
-			"map": {
-				"position": "98,330"
-			},
-			"hotSpots": [
-				{
-					"pitch": -5,
-					"yaw": -145,
-					"type": "scene",
-					"text": "(N.2) Virtue Through the Generations Main Hall, Shide Tang, 世德堂",
-					"sceneId": "lu_fam-virtue_generations_main"
-				},
-				{
-					"pitch": -5,
-					"yaw": 38,
-					"type": "scene",
-					"text": "(M) Cordial Meetings Hall, Jiahui Tang, 嘉會堂",
-					"sceneId": "lu_fam-jiahui_tang",
-					"targetYaw": -37
-				}
-			]
-		},
-		"lu_fam-virtue_generations_main": {
-			"title": "(N.2) Virtue Through the Generations Main Hall, Shide Tang, 世德堂",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/lu_family/lu_fam-virtue_generations_main",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": -29,
-			"yaw": 49,
-			"map": {
-				"position": "99,292"
-			},
-			"hotSpots": [
-				{
-					"pitch": -5,
-					"yaw": -46,
-					"type": "scene",
-					"text": "(O) Good Blessings Hall, Shanqing Tang, 善慶堂",
-					"sceneId": "lu_fam-shanqing_tang"
-				},
-				{
-					"pitch": -5,
-					"yaw": -134,
-					"type": "scene",
-					"text": "(N.1) Virtue Through the Generations Back Hall, Shide Tang, 世德堂(後堂)",
-					"sceneId": "lu_fam-virtue_generations_back",
-					"targetYaw": 38
-				}
-			]
-		}
+"bailu_mountain_Hu_Jiao_Zen": {
+"title": "(B) Hujiao Zen",
+"type": "multires",
+"multiRes": {
+		"basePath": "panos/bailu/bailu_mountain_Hu_Jiao_Zen",
+		"path": "/%l/%s%y_%x",
+		"fallbackPath": "/fallback/%s",
+		"extension": "jpg",
+		"tileResolution": 512,
+		"maxLevel": 4,
+		"cubeResolution": 2224
+},
+"panoNorthOffSet": 180,
+"yaw": -77,
+"map": {
+	"position": "120,590"
+},
+"hotSpots": [
+	{
+		"pitch": -15,
+		"yaw": 33,
+		"type": "scene",
+		"text": "(A) Road to Bailu",
+		"sceneId": "bailu_shan_road"
+	},
+	{
+		"pitch": -12,
+		"yaw": -83,
+		"type": "scene",
+		"text": "(C) Hujiao Zen Temple",
+		"sceneId": "bailu_mountain_Hu_Jiao_Zen_Temple"
 	}
+	]
+},
+"bailu_mountain_Hu_Jiao_Zen_Temple": {
+	"title": "(C) Hujiao Zen Temple",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/bailu/bailu_mountain_Hu_Jiao_Zen_Temple",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -22,
+			"yaw": -43,
+			"type": "scene",
+			"text": "(B)Hujiao Zen",
+			"sceneId": "bailu_mountain_Hu_Jiao_Zen"
+		},
+		{
+			"pitch": -22,
+			"yaw": 100,
+			"type": "scene",
+			"text": "(D) Hujiao Zen Temple Buddha",
+			"sceneId": "bailu_mountain_hu_jiao_zhen_jade_buddha"
+		}
+	]
+},
+"bailu_mountain_hu_jiao_zhen_jade_buddha": {
+	"title": "(D) Hujiao Zen Temple Buddha",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/bailu/bailu_mountain_hu_jiao_zhen_jade_buddha",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -10,
+			"yaw": -94,
+			"type": "scene",
+			"text": "(A)Road to Bailu",
+			"sceneId": "bailu_shan_road"
+		}
+	]
+}
+}
 }

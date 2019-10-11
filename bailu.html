@@ -7,13 +7,15 @@
   <link type="text/css" rel="Stylesheet" href="src/css/pannellum.css"/>
   <style type="text/css">
   #inset_map {
+    background-image: url('map/houwu_map.jpeg');
+    background-size: 100% 100%;
     float: right;
     top: -2px;
     right: 2px;
     vertical-align: top;
     padding: 10px 0 0 10px;
-    width: 140px;
-    height: 360px;
+    width: 189px;
+    height: 275px;
     background-color: #fff;
     opacity: 0.7;
     z-index: 1000;
@@ -121,7 +123,7 @@
 var map = document.createElement('div');
 map.id = 'inset_map';
 map.className = 'pnlm-insetmap pnlm-controls pnlm-control';
-map.innerHTML = '<object id="mapsvg" data="map/map.svg" type="image/svg+xml"></object>';
+map.innerHTML = '<object id="mapsvg" type="image/svg+xml"></object>';
 
 
 function CLtextHotspot(hotSpotDiv, args) {
@@ -164,7 +166,8 @@ function closeTooltipPopUp () {
 }
 
   Map.run({
-      panoramaConfig: "bailu.json"
+      panoramaConfig: "bailu.json",
+      mapSvgId: "mapsvg"
   });
 
 document.getElementById("container").appendChild(map);

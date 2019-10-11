@@ -5,17 +5,17 @@
 		"sceneFadeDuration": 2000,
 		"autoLoad": true,
 		"fallback": "",
-    "northOffset": -20,
+		"northOffset": -20,
 		"minPitch": -35,
 		"maxPitch": 35,
 		"hotSpotDebug": true,
-    "compass": true
+		"compass": true
 	},
 
   "default_extras": {
 		"firstScene": "lu_fam-street_to_compound",
-		"hotSpotDebug": true,
-    "compass": true
+		"hotSpotDebug": false,
+		"compass": true
   },
 
 	"scenes": {
