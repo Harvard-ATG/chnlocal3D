@@ -1,0 +1,138 @@
+{
+	"default": {
+		"author": "Peter Bol & Michael Szonyi",
+		"firstScene": "wenlou_residence_exterior",
+		"sceneFadeDuration": 2000,
+		"autoLoad": true,
+		"fallback": "",
+		"northOffset": -20,
+		"minPitch": -35,
+		"maxPitch": 35,
+		"hotSpotDebug": true,
+		"compass": true
+	},
+
+	"default_extras": {
+		"firstScene": "wenlou_residence_exterior",
+		"hotSpotDebug": true,
+    "compass": true
+  },
+
+	"scenes": {
+		"wenlou_residence_exterior": {
+			"title": "(A1)Grand Residence of the Metropolitan Governor Exterior ",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/wenlou/wenlou_residence_exterior",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+				"hotSpots": [
+					{
+						"pitch": -19,
+						"yaw": -150,
+						"type": "scene",
+						"text": "(A2)Grand Residence of the Metropolitan Governor Passage",
+						"sceneId": "wenlou_grand_residencde_passage"
+					}
+				]
+			},
+			"wenlou_grand_residencde_passage": {
+				"title": "(A2)Grand Residence of the Metropolitan Governor Passage",
+				"type": "multires",
+				"multiRes": {
+						"basePath": "panos/wenlou/wenlou_grand_residencde_passage",
+						"path": "/%l/%s%y_%x",
+						"fallbackPath": "/fallback/%s",
+						"extension": "jpg",
+						"tileResolution": 512,
+						"maxLevel": 4,
+						"cubeResolution": 2224
+				},
+				"panoNorthOffSet": 180,
+				"yaw": -77,
+				"map": {
+					"position": "120,590"
+				},
+				"hotSpots": [
+					{
+						"pitch": -22,
+						"yaw": -144,
+						"type": "scene",
+						"text": "(A1)Grand Residence of the Metropolitan Governor Exterior",
+						"sceneId": "wenlou_residence_exterior"
+					},
+					{
+						"pitch": -18,
+						"yaw": 25,
+						"type": "scene",
+						"text": "(A3)Grand Residence of the Metropolitan Governor Courtyard",
+						"sceneId": "wenlou_great_residence_courtyard"
+					}
+				]
+			},
+						"wenlou_great_residence_courtyard": {
+						  "title": "(A3)Grand Residence of the Metropolitan Governor Courtyard",
+						  "type": "multires",
+						  "multiRes": {
+						      "basePath": "panos/wenlou/wenlou_great_residence_courtyard",
+						      "path": "/%l/%s%y_%x",
+						      "fallbackPath": "/fallback/%s",
+						      "extension": "jpg",
+						      "tileResolution": 512,
+						      "maxLevel": 4,
+						      "cubeResolution": 2224
+						  },
+						  "panoNorthOffSet": 180,
+						  "yaw": -77,
+						  "map": {
+						    "position": "120,590"
+						  },
+						  "hotSpots": [
+						    {
+						      "pitch": -20,
+						      "yaw": -26,
+						      "type": "scene",
+						      "text": "(A2)Grand Residence of the Metropolitan Governor Passage",
+						      "sceneId": "wenlou_grand_residencde_passage"
+						    },
+						    {
+						      "pitch": -20,
+						      "yaw": 2,
+						      "type": "scene",
+						      "text": "(B)Loftiness and Brilliance Hall",
+						      "sceneId": "wenlou_loftiness_brilliance_hall"
+						    }
+						  ]
+						},
+						"wenlou_loftiness_brilliance_hall": {
+						  "title": "(B)Loftiness and Brilliance Hall",
+						  "type": "multires",
+						  "multiRes": {
+						      "basePath": "panos/wenlou/wenlou_loftiness_brilliance_hall",
+						      "path": "/%l/%s%y_%x",
+						      "fallbackPath": "/fallback/%s",
+						      "extension": "jpg",
+						      "tileResolution": 512,
+						      "maxLevel": 4,
+						      "cubeResolution": 2224
+						  },
+						  "panoNorthOffSet": 180,
+						  "yaw": -77,
+						  "map": {
+						    "position": "120,590"
+						  },
+						  "hotSpots": [
+						  ]
+						}
+						}
+						}

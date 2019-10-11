@@ -1,0 +1,683 @@
+{
+	"default": {
+		"author": "Peter Bol & Michael Szonyi",
+		"firstScene": "yuyuan_villiage_Yu _Ancestral_HalL_exterior",
+		"sceneFadeDuration": 2000,
+		"autoLoad": true,
+		"fallback": "",
+		"northOffset": -20,
+		"minPitch": -35,
+		"maxPitch": 35,
+		"hotSpotDebug": true,
+		"compass": true
+	},
+
+	"default_extras": {
+		"firstScene": "yuyuan_villiage_Yu _Ancestral_HalL_exterior",
+		"hotSpotDebug": true,
+    "compass": true
+  },
+
+	"scenes": {
+		"yuyuan_villiage_Yu _Ancestral_HalL_exterior": {
+			"title": "(A1)Yu Lineage Ancestral Hall Exterior",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/yuyuan/yuyuan_villiage_Yu _Ancestral_HalL_exterior",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -6,
+					"yaw": -178,
+					"type": "scene",
+					"text": "(A2)Yu Lineage Ancestral Hall Opera Stage",
+					"sceneId": "yuyuan_yu_lineage_ancestral_hall_opera_stage"
+				}
+			]
+		},
+
+		"yuyuan_yu_lineage_ancestral_hall_opera_stage": {
+			"title": "(A2)Yu Lineage Ancestral Hall Opera Stage",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/yuyuan/yuyuan_yu_lineage_ancestral_hall_opera_stage",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{	"pitch": -19,
+					"yaw": 170,
+					"type": "scene",
+					"text": "(A1)Yu Lineage Ancestral Hall Exterior",
+					"sceneId": "yuyuan_villiage_Yu _Ancestral_HalL_exterior"
+				},
+
+			{	"pitch": -20,
+				"yaw": 177,
+				"type": "scene",
+				"text": "(A3)Yu Lineage Ancestral Hall Outer Courtyard",
+				"sceneId": "yuyuan_Yu_Lineage_Ancestral_Hall_outer_courtyard"
+			}
+		]
+	},
+	"yuyuan_Yu_Lineage_Ancestral_Hall_outer_courtyard": {
+	  "title": "(A3)Yu Lineage Ancestral Hall Outer Courtyard",
+	  "type": "multires",
+	  "multiRes": {
+	      "basePath": "panos/yuyuan/yuyuan_Yu_Lineage_Ancestral_Hall_outer_courtyard",
+	      "path": "/%l/%s%y_%x",
+	      "fallbackPath": "/fallback/%s",
+	      "extension": "jpg",
+	      "tileResolution": 512,
+	      "maxLevel": 4,
+	      "cubeResolution": 2224
+	  },
+	  "panoNorthOffSet": 180,
+	  "yaw": -77,
+	  "map": {
+	    "position": "120,590"
+	  },
+	  "hotSpots": [
+	    {
+	      "pitch": -15,
+	      "yaw": 178,
+	      "type": "scene",
+	      "text": "(A2)Yu Lineage Ancestral Hall Opera Stage",
+	      "sceneId": "yuyuan_yu_lineage_ancestral_hall_opera_stage"
+	    },
+	    {
+	      "pitch": -30,
+	      "yaw": 12,
+	      "type": "scene",
+	      "text": "(A4)Yu Lineage Ancestral Hall Inner Couryard",
+	      "sceneId": "yuyuan_Yu_lineage Ancestral Hall-- innter couryard"
+	    }
+	  ]
+	},
+	"yuyuan_Yu_lineage Ancestral Hall-- innter couryard": {
+	  "title": "(A4)Yu Lineage Ancestral Hall Inner Couryard",
+	  "type": "multires",
+	  "multiRes": {
+	      "basePath": "panos/yuyuan/yuyuan_Yu_lineage Ancestral Hall-- innter couryard",
+	      "path": "/%l/%s%y_%x",
+	      "fallbackPath": "/fallback/%s",
+	      "extension": "jpg",
+	      "tileResolution": 512,
+	      "maxLevel": 4,
+	      "cubeResolution": 2224
+	  },
+	  "panoNorthOffSet": 180,
+	  "yaw": -77,
+	  "map": {
+	    "position": "120,590"
+	  },
+	  "hotSpots": [
+	    {
+	      "pitch": -4,
+	      "yaw": 160,
+	      "type": "scene",
+	      "text": "(A3)Yu Lineage Ancestral Hall Outer Courtyard",
+	      "sceneId": "yuyuan_Yu_Lineage_Ancestral_Hall_outer_courtyard"
+	    },
+	    {
+	      "pitch": -4,
+	      "yaw": -150,
+	      "type": "scene",
+	      "text": "(C1)Six Peaks Hall Exterior",
+	      "sceneId": "yuyuan_Six_Peaks_Hall_exterior"
+	    }
+	  ]
+	},
+	"yuyuan_Six_Peaks_Hall_exterior": {
+	  "title": "(C1)Six Peaks Hall Exterior",
+	  "type": "multires",
+	  "multiRes": {
+	      "basePath": "panos/yuyuan/yuyuan_Six_Peaks_Hall_exterior",
+	      "path": "/%l/%s%y_%x",
+	      "fallbackPath": "/fallback/%s",
+	      "extension": "jpg",
+	      "tileResolution": 512,
+	      "maxLevel": 4,
+	      "cubeResolution": 2224
+	  },
+	  "panoNorthOffSet": 180,
+	  "yaw": -77,
+	  "map": {
+	    "position": "120,590"
+	  },
+	  "hotSpots": [
+	    {
+	      "pitch": -4,
+	      "yaw": 160,
+	      "type": "scene",
+	      "text": "(A4)Yu Lineage Ancestral Hall Inner Couryard",
+	      "sceneId": "yuyuan_Yu_lineage Ancestral Hall-- innter couryard"
+	    },
+			{
+	      "pitch": -5,
+	      "yaw": 150,
+	      "type": "scene",
+	      "text": "(C2)Six Peaks Hall Outer Courtyard",
+	      "sceneId": "yuyuan_Six_Peaks_Hall_outer"
+	    }
+	  ]
+	},
+	"yuyuan_Six_Peaks_Hall_outer": {
+	  "title": "(C2)Six Peaks Hall Outer Courtyard",
+	  "type": "multires",
+	  "multiRes": {
+	      "basePath": "panos/yuyuan/yuyuan_Six_Peaks_Hall_outer",
+	      "path": "/%l/%s%y_%x",
+	      "fallbackPath": "/fallback/%s",
+	      "extension": "jpg",
+	      "tileResolution": 512,
+	      "maxLevel": 4,
+	      "cubeResolution": 2224
+	  },
+	  "panoNorthOffSet": 180,
+	  "yaw": -77,
+	  "map": {
+	    "position": "120,590"
+	  },
+	  "hotSpots": [
+	    {
+	      "pitch": -1,
+	      "yaw": -160,
+	      "type": "scene",
+	      "text": "(C1)Six Peaks Hall Exterior",
+	      "sceneId": "yuyuan_Six_Peaks_Hall_exterior"
+	    },
+			{
+	      "pitch": -1,
+	      "yaw": 157,
+	      "type": "scene",
+	      "text": "(C3)Six Peaks Hall Inner courtyard",
+	      "sceneId": "yuyuan_Six_Peaks_Hall_Inner"
+	    }
+	  ]
+	},
+	"yuyuan_Six_Peaks_Hall_Inner": {
+	  "title": "(C3)Six Peaks Hall Inner courtyard",
+	  "type": "multires",
+	  "multiRes": {
+	      "basePath": "panos/yuyuan/yuyuan_Six_Peaks_Hall_Inner",
+	      "path": "/%l/%s%y_%x",
+	      "fallbackPath": "/fallback/%s",
+	      "extension": "jpg",
+	      "tileResolution": 512,
+	      "maxLevel": 4,
+	      "cubeResolution": 2224
+	  },
+	  "panoNorthOffSet": 180,
+	  "yaw": -77,
+	  "map": {
+	    "position": "120,590"
+	  },
+	  "hotSpots": [
+	    {
+	      "pitch": -14,
+	      "yaw": -111,
+	      "type": "scene",
+	      "text": "(C2)Six Peaks Hall Outer Courtyard",
+	      "sceneId": "yuyuan_Six_Peaks_Hall_outer"
+	    },
+			{
+	      "pitch": -14,
+	      "yaw": -66,
+	      "type": "scene",
+	      "text": "(D)Six Foundations Hall",
+	      "sceneId": "yuyuan_Six_Foundations_Hall"
+	    }
+	  ]
+	},
+	"yuyuan_Six_Foundations_Hall": {
+	  "title": "(D)Six Foundations Hall",
+	  "type": "multires",
+	  "multiRes": {
+	      "basePath": "panos/yuyuan/yuyuan_Six_Foundations_Hall",
+	      "path": "/%l/%s%y_%x",
+	      "fallbackPath": "/fallback/%s",
+	      "extension": "jpg",
+	      "tileResolution": 512,
+	      "maxLevel": 4,
+	      "cubeResolution": 2224
+	  },
+	  "panoNorthOffSet": 180,
+	  "yaw": -77,
+	  "map": {
+	    "position": "120,590"
+	  },
+	  "hotSpots": [
+	    {
+	      "pitch": -20,
+	      "yaw": -158,
+	      "type": "scene",
+	      "text": "(C3)Six Peaks Hall Inner courtyard",
+	      "sceneId": "yuyuan_Six_Peaks_Hall_Inner"
+	    },
+			{
+	      "pitch": -20,
+	      "yaw": -130,
+	      "type": "scene",
+	      "text": "(E)Profundity High Hall",
+	      "sceneId": "yuyuan_Profundity_High_Hall"
+	    }
+	  ]
+	},
+	"yuyuan_Profundity_High_Hall": {
+	  "title": "(E)Profundity High Hall",
+	  "type": "multires",
+	  "multiRes": {
+	      "basePath": "panos/yuyuan/yuyuan_Profundity_High_Hall",
+	      "path": "/%l/%s%y_%x",
+	      "fallbackPath": "/fallback/%s",
+	      "extension": "jpg",
+	      "tileResolution": 512,
+	      "maxLevel": 4,
+	      "cubeResolution": 2224
+	  },
+	  "panoNorthOffSet": 180,
+	  "yaw": -77,
+	  "map": {
+	    "position": "120,590"
+	  },
+	  "hotSpots": [
+	    {
+	      "pitch": -19,
+	      "yaw": -18,
+	      "type": "scene",
+	      "text": "(D)Six Foundations Hall",
+	      "sceneId": "yuyuan_Six_Foundations_Hall"
+	    },
+			{
+	      "pitch": -19,
+	      "yaw": 8,
+	      "type": "scene",
+	      "text": "(F1)Gaozuo Lou Exterior",
+	      "sceneId": "yuyuan_Gaozuo_Lou_exterior"
+	    }
+	  ]
+	},
+	"yuyuan_Gaozuo_Lou_exterior": {
+	  "title": "(F1)Gaozuo Lou Exterior",
+	  "type": "multires",
+	  "multiRes": {
+	      "basePath": "panos/yuyuan/yuyuan_Gaozuo_Lou_exterior",
+	      "path": "/%l/%s%y_%x",
+	      "fallbackPath": "/fallback/%s",
+	      "extension": "jpg",
+	      "tileResolution": 512,
+	      "maxLevel": 4,
+	      "cubeResolution": 2224
+	  },
+	  "panoNorthOffSet": 180,
+	  "yaw": -77,
+	  "map": {
+	    "position": "120,590"
+	  },
+	  "hotSpots": [
+	    {
+	      "pitch": -27,
+	      "yaw": 78,
+	      "type": "scene",
+	      "text": "(E)Profundity High Hall",
+	      "sceneId": "yuyuan_Profundity_High_Hall"
+	    },
+			{
+	      "pitch": -11,
+	      "yaw": -18,
+	      "type": "scene",
+	      "text": "(F2)Gaozuo Lou Courtyard",
+	      "sceneId": "yuyuan_Gaozuo_Lou_courtyard"
+	    }
+	  ]
+	},
+	"yuyuan_Gaozuo_Lou_courtyard": {
+	  "title": "(F2)Gaozuo Lou Courtyard",
+	  "type": "multires",
+	  "multiRes": {
+	      "basePath": "panos/yuyuan/yuyuan_Gaozuo_Lou_courtyard",
+	      "path": "/%l/%s%y_%x",
+	      "fallbackPath": "/fallback/%s",
+	      "extension": "jpg",
+	      "tileResolution": 512,
+	      "maxLevel": 4,
+	      "cubeResolution": 2224
+	  },
+	  "panoNorthOffSet": 180,
+	  "yaw": -77,
+	  "map": {
+	    "position": "120,590"
+	  },
+	  "hotSpots": [
+	    {
+	      "pitch": -15,
+	      "yaw": 9,
+	      "type": "scene",
+		      "text": "(F1)Gaozuo Lou Exterior",
+	      "sceneId": "yuyuan_Gaozuo_Lou_exterior"
+	    },
+			{
+	      "pitch": -15,
+	      "yaw": 36,
+	      "type": "scene",
+	      "text": "(G)Enrich the Descendants Hall",
+	      "sceneId": "yuyuan_Enrich_the_Descendants_Hall"
+	    }
+	  ]
+	},
+"yuyuan_Enrich_the_Descendants_Hall": {
+"title": "(G)Enrich the Descendants Hall",
+"type": "multires",
+"multiRes": {
+		"basePath": "panos/yuyuan/yuyuan_Enrich_the_Descendants_Hall",
+		"path": "/%l/%s%y_%x",
+		"fallbackPath": "/fallback/%s",
+		"extension": "jpg",
+		"tileResolution": 512,
+		"maxLevel": 4,
+		"cubeResolution": 2224
+},
+"panoNorthOffSet": 180,
+"yaw": -77,
+"map": {
+	"position": "120,590"
+},
+"hotSpots": [
+	{
+		"pitch": -7,
+		"yaw": 58,
+		"type": "scene",
+			"text": "(F2)Gaozuo Lou Courtyard",
+		"sceneId": "yuyuan_Gaozuo_Lou_courtyard"
+	},
+	{
+		"pitch": -10,
+		"yaw": 42,
+		"type": "scene",
+		"text": "(H1)Upper Myriad Springs Hall Entrance",
+		"sceneId": "yuyuan_Upper_entrance_hall"
+	}
+]
+},
+"yuyuan_Upper_entrance_hall": {
+"title": "(H1)Upper Myriad Springs Hall Entrance",
+"type": "multires",
+"multiRes": {
+		"basePath": "panos/yuyuan/yuyuan_Upper_entrance_hall",
+		"path": "/%l/%s%y_%x",
+		"fallbackPath": "/fallback/%s",
+		"extension": "jpg",
+		"tileResolution": 512,
+		"maxLevel": 4,
+		"cubeResolution": 2224
+},
+"panoNorthOffSet": 180,
+"yaw": -77,
+"map": {
+	"position": "120,590"
+},
+"hotSpots": [
+	{
+		"pitch": -11,
+		"yaw": 8,
+		"type": "scene",
+			"text": "(G)Enrich tht Descendants Hall",
+		"sceneId": "yuyuan_Enrich_the_Descendants_Hall"
+	},
+	{
+		"pitch": -11,
+		"yaw": -18,
+		"type": "scene",
+		"text": "(H2)Upper Myriad Springs Hall Outer",
+		"sceneId": "yuyuan_Upper_Myriad_Springs Hall_outer"
+	}
+]
+},
+"yuyuan_Upper_Myriad_Springs Hall_outer": {
+"title": "(H2)Upper Myriad Springs Hall Outer",
+"type": "multires",
+"multiRes": {
+		"basePath": "panos/yuyuan/yuyuan_Upper_Myriad_Springs Hall_outer",
+		"path": "/%l/%s%y_%x",
+		"fallbackPath": "/fallback/%s",
+		"extension": "jpg",
+		"tileResolution": 512,
+		"maxLevel": 4,
+		"cubeResolution": 2224
+},
+"panoNorthOffSet": 180,
+"yaw": -77,
+"map": {
+	"position": "120,590"
+},
+"hotSpots": [
+	{
+		"pitch": -27,
+		"yaw": 178,
+		"type": "scene",
+			"text": "(H1)Upper Myriad Spring Hall Entrance",
+		"sceneId": "yuyuan_Upper_entrance_hall"
+	},
+	{
+		"pitch": -11,
+		"yaw": -18,
+		"type": "scene",
+		"text": "(H3)Upper Myriad Springs Hall Inner",
+		"sceneId": "yuyuan_Upper_Hall_inner"
+	}
+]
+},
+"yuyuan_Upper_Hall_inner": {
+"title": "(H3)Upper Myriad Springs Hall Inner",
+"type": "multires",
+"multiRes": {
+		"basePath": "panos/yuyuan/yuyuan_Upper_Hall_inner",
+		"path": "/%l/%s%y_%x",
+		"fallbackPath": "/fallback/%s",
+		"extension": "jpg",
+		"tileResolution": 512,
+		"maxLevel": 4,
+		"cubeResolution": 2224
+},
+"panoNorthOffSet": 180,
+"yaw": -77,
+"map": {
+	"position": "120,590"
+},
+"hotSpots": [
+	{
+		"pitch": -12,
+		"yaw": 15,
+		"type": "scene",
+			"text": "(H2)Upper Myriad Spring Hall Outer",
+		"sceneId": "yuyuan_Upper_Myriad_Springs Hall_outer"
+	},
+	{
+		"pitch": -11,
+		"yaw": -18,
+		"type": "scene",
+		"text": "(I)Grotto Lord Temple",
+		"sceneId": "yuyuan_Grotto_Temple"
+	}
+]
+},
+"yuyuan_Grotto_Temple": {
+"title": "(I)Grotto Lord Temple",
+"type": "multires",
+"multiRes": {
+		"basePath": "panos/yuyuan/yuyuan_Grotto_Temple",
+		"path": "/%l/%s%y_%x",
+		"fallbackPath": "/fallback/%s",
+		"extension": "jpg",
+		"tileResolution": 512,
+		"maxLevel": 4,
+		"cubeResolution": 2224
+},
+"panoNorthOffSet": 180,
+"yaw": -77,
+"map": {
+	"position": "120,590"
+},
+"hotSpots": [
+	{
+		"pitch": -23,
+		"yaw": 179,
+		"type": "scene",
+			"text": "(H3)Upper Myriad Spring Hall Inner",
+		"sceneId": "yuyuan_Upper_Hall_inner"
+	},
+	{
+		"pitch": -11,
+		"yaw": -18,
+		"type": "scene",
+		"text": "(J1)Grotto Lord Temple Entrance",
+		"sceneId": "yuyuan_Grotto_entrance"
+	}
+]
+},
+"yuyuan_Grotto_entrance": {
+"title": "(J1)Grotto Lord Temple Entrance",
+"type": "multires",
+"multiRes": {
+		"basePath": "panos/yuyuan/yuyuan_Grotto_entrance",
+		"path": "/%l/%s%y_%x",
+		"fallbackPath": "/fallback/%s",
+		"extension": "jpg",
+		"tileResolution": 512,
+		"maxLevel": 4,
+		"cubeResolution": 2224
+},
+"panoNorthOffSet": 180,
+"yaw": -77,
+"map": {
+	"position": "120,590"
+},
+"hotSpots": [
+	{
+		"pitch": -9,
+		"yaw": -59,
+		"type": "scene",
+			"text": "(I)Grotto Temple",
+		"sceneId": "yuyuan_Grotto_Temple"
+	},
+	{
+		"pitch": -11,
+		"yaw": -18,
+		"type": "scene",
+		"text": "(J2)Grotto Lord Temple Right",
+		"sceneId": "yuyuan_Grotto_right"
+	}
+]
+},
+"yuyuan_Grotto_right": {
+"title": "(J2)Grotto Lord Temple Right",
+"type": "multires",
+"multiRes": {
+		"basePath": "panos/yuyuan/yuyuan_Grotto_right",
+		"path": "/%l/%s%y_%x",
+		"fallbackPath": "/fallback/%s",
+		"extension": "jpg",
+		"tileResolution": 512,
+		"maxLevel": 4,
+		"cubeResolution": 2224
+},
+"panoNorthOffSet": 180,
+"yaw": -77,
+"map": {
+	"position": "120,590"
+},
+"hotSpots": [
+	{
+		"pitch": -13,
+		"yaw": 63,
+		"type": "scene",
+			"text": "(J1)Grotto Temple Entrance",
+		"sceneId": "yuyuan_Grotto_entrance"
+	},
+	{
+		"pitch": -13,
+		"yaw": 51,
+		"type": "scene",
+		"text": "(J3)Grotto Lord Temple Left",
+		"sceneId": "yuyuan_Grotto_left"
+	}
+]
+},
+"yuyuan_Grotto_left": {
+"title": "(J3)Grotto Lord Temple Left",
+"type": "multires",
+"multiRes": {
+		"basePath": "panos/yuyuan/yuyuan_Grotto_left",
+		"path": "/%l/%s%y_%x",
+		"fallbackPath": "/fallback/%s",
+		"extension": "jpg",
+		"tileResolution": 512,
+		"maxLevel": 4,
+		"cubeResolution": 2224
+},
+"panoNorthOffSet": 180,
+"yaw": -77,
+"map": {
+	"position": "120,590"
+},
+"hotSpots": [
+	{
+		"pitch": -19,
+		"yaw": -70,
+		"type": "scene",
+			"text": "(J2)Grotto Temple Right",
+		"sceneId": "yuyuan_Grotto_right"
+	},
+	{
+		"pitch": -19,
+		"yaw": -50,
+		"type": "scene",
+		"text": "(J4)Grotto Lord Temple Left Wing",
+		"sceneId": "yuyuan_grotto_loard_left_wing"
+	}
+]
+},
+"yuyuan_grotto_loard_left_wing": {
+"title": "(J4)Grotto Lord Temple Left Wing",
+"type": "multires",
+"multiRes": {
+		"basePath": "panos/yuyuan/yuyuan_grotto_loard_left_wing",
+		"path": "/%l/%s%y_%x",
+		"fallbackPath": "/fallback/%s",
+		"extension": "jpg",
+		"tileResolution": 512,
+		"maxLevel": 4,
+		"cubeResolution": 2224
+},
+"panoNorthOffSet": 180,
+"yaw": -77,
+"map": {
+	"position": "120,590"
+},
+"hotSpots": [
+
+]
+}
+}
+}

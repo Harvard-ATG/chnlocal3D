@@ -1,0 +1,547 @@
+{
+	"default": {
+		"author": "Peter Bol & Michael Szonyi",
+		"firstScene": "dayuan_Cheng_en_tang",
+		"sceneFadeDuration": 2000,
+		"autoLoad": true,
+		"fallback": "",
+		"northOffset": -20,
+		"minPitch": -35,
+		"maxPitch": 35,
+		"hotSpotDebug": true,
+		"compass": true
+	},
+
+	"default_extras": {
+		"firstScene": "dayuan_Cheng_en_tang",
+		"hotSpotDebug": true,
+    "compass": true
+  },
+
+	"scenes": {
+		"dayuan_Cheng_en_tang": {
+			"title": "(A4)Cheng En Tang",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/dayuan/dayuan_Cheng_en_tang",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -10,
+					"yaw": -9,
+					"type": "scene",
+					"text": "(G1) Look Up with Awe Hall Courtyard",
+					"sceneId": "dayuan_look_up_with_awe_hall_court_yard"
+				}
+			]
+		},
+		"dayuan_look_up_with_awe_hall_court_yard": {
+			"title": "(G1) Look Up with Awe Hall Courtyard",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/dayuan/dayuan_look_up_with_awe_hall_court_yard",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -14,
+					"yaw": 98,
+					"type": "scene",
+					"text": "(G2) Look Up With Awe Hall Inside",
+					"sceneId": "dayuan_look_up_with_awe_inside"
+				},
+		{	"pitch": -13,
+			"yaw": -87,
+			"type": "scene",
+			"text": "(A4)Cheng En Tang",
+			"sceneId": "dayuan_Cheng_en_tang"
+		}
+	]
+},
+
+"dayuan_look_up_with_awe_inside": {
+	"title": "(G2) Look Up With Awe Hall Inside",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/dayuan/dayuan_look_up_with_awe_inside",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -31,
+			"yaw": -33,
+			"type": "scene",
+			"text": "(L1)Wu Baipeng Memorial Hall",
+			"sceneId": "dayuan_Wu_Baipeng"
+		},
+{	"pitch": -31,
+	"yaw": -61,
+	"type": "scene",
+	"text": "(G1) Look Up with Awe HallCourtyard",
+	"sceneId": "dayuan_look_up_with_awe_hall_court_yard"
+}
+]
+},
+
+"dayuan_Wu_Baipeng": {
+	"title": "(L1)Wu Baipeng Memorial Hall",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/dayuan/dayuan_Wu_Baipeng",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -17,
+			"yaw": 68,
+			"type": "scene",
+			"text": "(G2) Look Up With Awe Hall Inside",
+			"sceneId": "dayuan_look_up_with_awe_inside"
+		},
+		{
+			"pitch": -17,
+			"yaw": 78,
+			"type": "scene",
+			"text": "(L2) Wu Baipeng Memorial Hall Outside",
+			"sceneId": "dayuan_wu_baipeng_outside"
+		}
+]
+},
+"dayuan_wu_baipeng_outside": {
+	"title": "(L2) Wu Baipeng Memorial Hall Outside",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/dayuan/dayuan_wu_baipeng_outside",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -6,
+			"yaw": 156,
+			"type": "scene",
+			"text": "(L1)Wu Baipeng Memorial Hall",
+			"sceneId": "dayuan_Wu_Baipeng"
+		},
+		{
+			"pitch": -6,
+			"yaw": 166,
+			"type": "scene",
+			"text": "(L3)Wu Baipeng Memorial Hall Door",
+			"sceneId": "dayuan_wu_baipeng_door"
+		}
+]
+},
+"dayuan_wu_baipeng_door": {
+	"title": "(L3)Wu Baipeng Memorial Hall Door",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/dayuan/dayuan_wu_baipeng_door",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -30,
+			"yaw": 104,
+			"type": "scene",
+			"text": "(L2) Wu Baipeng Memorial Hall Outside",
+			"sceneId": "dayuan_wu_baipeng_outside"
+		},
+		{
+			"pitch": -33,
+			"yaw": 124,
+			"type": "scene",
+			"text": "(M1)Wu Zhijiang House Street entrance",
+			"sceneId": "dayuan_wu_zhijiaang_house_street"
+		}
+	]
+},
+"dayuan_wu_zhijiaang_house_street": {
+	"title": "(M1)Wu Zhijiang House Street entrance",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/dayuan/dayuan_wu_zhijiaang_house_street",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -20,
+			"yaw": 86,
+			"type": "scene",
+			"text": "(L3) Wu Baipeng Memorial Hall Door",
+			"sceneId": "dayuan_wu_baipeng_door"
+		},
+		{
+			"pitch": -20,
+			"yaw": 138,
+			"type": "scene",
+			"text": "(M3)Wu Zhijiang House Foyer",
+			"sceneId": "dayuan_wu_zhijiang_foyer"
+		}
+	]
+},
+"dayuan_wu_zhijiang_foyer": {
+	"title": "(M3)Wu Zhijiang House Foyer",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/dayuan/dayuan_wu_zhijiang_foyer",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -32,
+			"yaw": 2,
+			"type": "scene",
+			"text": "(M1)Wu Zhijiang House Street entrance",
+			"sceneId": "dayuan_wu_zhijiaang_house_street"
+		},
+		{
+			"pitch": -32,
+			"yaw": 21,
+			"type": "scene",
+			"text": "(M4)Wu Zhijiang House Living Room",
+			"sceneId": "dayuan_wu_zhijiang_living_room"
+		}
+	]
+},
+"dayuan_wu_zhijiang_living_room": {
+	"title": "(M4)Wu Zhijiang House Living Room",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/dayuan/dayuan_wu_zhijiang_living_room",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -30,
+			"yaw": -35,
+			"type": "scene",
+			"text": "(M3)Wu Zhijiang House Foyer",
+			"sceneId": "dayuan_wu_zhijiang_foyer"
+		},
+		{
+			"pitch": -27,
+			"yaw": -13,
+			"type": "scene",
+			"text": "(M5)Wu Zhijiang House Passage Hall",
+			"sceneId": "dayuan_wu_zhijiang_passage_hall"
+		}
+	]
+},
+"dayuan_wu_zhijiang_passage_hall": {
+	"title": "(M5)Wu Zhijiang House Passage Hall",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/dayuan/dayuan_wu_zhijiang_passage_hall",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -17,
+			"yaw": 163,
+			"type": "scene",
+			"text": "(M4)Wu Zhijiang House Living Room",
+			"sceneId": "dayuan_wu_zhijiang_living_room"
+		},
+		{
+			"pitch": -18,
+			"yaw": -108,
+			"type": "scene",
+			"text": "(M6)Wu Zhijiang House Dining Room",
+			"sceneId": "dayuan_wu_zhijiang_dining_room"
+		}
+	]
+},
+"dayuan_wu_zhijiang_dining_room": {
+	"title": "(M6)Wu Zhijiang House Dining Room",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/dayuan/dayuan_wu_zhijiang_dining_room",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -31,
+			"yaw": 123,
+			"type": "scene",
+			"text": "(M5)Wu Zhijiang House Passage Hall",
+			"sceneId": "dayuan_wu_zhijiang_passage_hall"
+		},
+		{
+			"pitch": -18,
+			"yaw": -108,
+			"type": "scene",
+			"text": "(M7)Wu Zhijiang House Rear Courtyard",
+			"sceneId": "dayuan_wu_zhijiang_rear_courtyard"
+		}
+	]
+},
+"dayuan_wu_zhijiang_rear_courtyard": {
+	"title": "(M7)Wu Zhijiang House Rear Courtyard",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/dayuan/dayuan_wu_zhijiang_rear_courtyard",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -9,
+			"yaw": -177,
+			"type": "scene",
+			"text": "(M6)Wu Zhijiang House Dining Room",
+			"sceneId": "dayuan_wu_zhijiang_dining_room"
+		},
+		{
+			"pitch": -8,
+			"yaw": -25,
+			"type": "scene",
+			"text": "(M8)Wu Zhijiang House 3rd Floor Landing",
+			"sceneId": "dayuan_wu_zhijiang_third_floor_landing"
+		}
+	]
+},
+"dayuan_wu_zhijiang_third_floor_landing": {
+	"title": "(M8))Wu Zhijiang House 3rd Floor Landing",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/dayuan/dayuan_wu_zhijiang_third_floor_landing",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -25,
+			"yaw": 104,
+			"type": "scene",
+			"text": "(N1)Wu Zhijiang Traditional House Central Room",
+			"sceneId": "dayuan_wu_zhijiang_traditional_centralroom"
+		},
+		{
+			"pitch": -25,
+			"yaw": 120,
+			"type": "scene",
+			"text": "(M7)Wu Zhijiang House Rear Courtyard",
+			"sceneId": "dayuan_wu_zhijiang_rear_courtyard"
+		}
+	]
+},
+"dayuan_wu_zhijiang_traditional_centralroom": {
+	"title": "(N1)Wu Zhijiang Traditional House Central Room",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/dayuan/dayuan_wu_zhijiang_traditional_centralroom",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -23,
+			"yaw": 34,
+			"type": "scene",
+			"text": "(N2)Wu Zhijiang Traditional House Left Room",
+			"sceneId": "dayuan_wu_zhijiang_traditional_leftroom"
+		},
+		{
+			"pitch": -24,
+			"yaw": 8,
+			"type": "scene",
+			"text": "(M8)Wu Zhijiang House Rear Courtyard ",
+			"sceneId": "dayuan_wu_zhijiang_rear_courtyard"
+		}
+	]
+},
+"dayuan_wu_zhijiang_traditional_leftroom": {
+	"title": "(N2)Wu Zhijiang Traditional House Left Room",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/dayuan/dayuan_wu_zhijiang_traditional_leftroom",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -24,
+			"yaw": 11,
+			"type": "scene",
+			"text": "(N1)Wu Zhijiang Traditional House Central Room",
+			"sceneId": "dayuan_wu_zhijiang_traditional_centralroom"
+		},
+		{
+			"pitch": -23,
+			"yaw": -19,
+			"type": "scene",
+			"text": "(N3)Wu Zhijiang Traditional House Right Room",
+			"sceneId": "dayuan_wu_zhijiang_traditional_rightroom"
+		}
+	]
+},
+"dayuan_wu_zhijiang_traditional_rightroom": {
+	"title": "(N3)Wu Zhijiang Traditional House Right Room",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/dayuan/dayuan_wu_zhijiang_traditional_rightroom",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+
+	]
+}
+}
+}

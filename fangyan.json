@@ -1,0 +1,104 @@
+{
+	"default": {
+		"author": "Peter Bol & Michael Szonyi",
+		"firstScene": "fangyan_loard_hu_temple_exterior",
+		"sceneFadeDuration": 2000,
+		"autoLoad": true,
+		"fallback": "",
+		"northOffset": -20,
+		"minPitch": -35,
+		"maxPitch": 35,
+		"hotSpotDebug": true,
+		"compass": true
+	},
+
+	"default_extras": {
+		"firstScene": "fangyan_loard_hu_temple_exterior",
+		"hotSpotDebug": true,
+    "compass": true
+  },
+
+	"scenes": {
+		"fangyan_loard_hu_temple_exterior": {
+			"title": "(D1)Lord Hu Temple Exterior",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/fangyan/fangyan_loard_hu_temple_exterior",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -7,
+					"yaw": 81,
+					"type": "scene",
+					"text": "(D2)Lord Hu Temple Main Hall",
+					"sceneId": "fangyan_lord-hu_mainhall"
+				}
+			]
+		},
+		"fangyan_lord-hu_mainhall": {
+			"title": "(D2)Lord Hu Temple Main Hall",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/fangyan/fangyan_lord-hu_mainhall",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -13,
+					"yaw": -85,
+					"type": "scene",
+					"text": "(F)Buddihist Temple",
+					"sceneId": "fangyan_buddihist_temple"
+				},
+		{	"pitch": -13,
+			"yaw": -23,
+			"type": "scene",
+			"text": "(D1)Lord Hu Temple Exterior",
+			"sceneId": "fangyan_loard_hu_temple_exterior"
+		}
+	]
+},
+"fangyan_buddihist_temple": {
+	"title": "(F)Buddihist Temple",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/fangyan/fangyan_buddihist_temple",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+
+]
+}
+}
+}

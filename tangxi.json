@@ -1,0 +1,308 @@
+{
+	"default": {
+		"author": "Peter Bol & Michael Szonyi",
+		"firstScene": "tangxi_front_gate",
+		"sceneFadeDuration": 2000,
+		"autoLoad": true,
+		"fallback": "",
+		"northOffset": -20,
+		"minPitch": -35,
+		"maxPitch": 35,
+		"hotSpotDebug": true,
+		"compass": true
+	},
+
+	"default_extras": {
+		"firstScene": "tangxi_front_gate",
+		"hotSpotDebug": true,
+    "compass": true
+  },
+
+	"scenes": {
+		"tangxi_front_gate": {
+			"title": "(A) Tangxi Front Gate",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/tangxi/tangxi_front_gate",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -9,
+					"yaw": -151,
+					"type": "scene",
+					"text": "(B)Opera Stage",
+					"sceneId": "tangxi_opera_stage"
+				}
+			]
+		},
+		"tangxi_opera_stage": {
+			"title": "(B)Opera Stage",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/tangxi/tangxi_opera_stage",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -25,
+					"yaw": -2,
+					"type": "scene",
+					"text": "(A)Front Gate",
+					"sceneId": "tangxi_front_gate"
+				},
+		{	"pitch": -15,
+			"yaw": -2,
+			"type": "scene",
+			"text": "(C)Courtyard near stage",
+			"sceneId": "tangxi_courtyard_near_stage"
+		}
+	]
+},
+"tangxi_courtyard_near_stage": {
+	"title": "(C)Courtyard near stage",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/tangxi/tangxi_courtyard_near_stage",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -15,
+			"yaw": 170,
+			"type": "scene",
+			"text": "(B)Opera Stage",
+			"sceneId": "tangxi_opera_stage"
+		},
+		{
+			"pitch": -15,
+			"yaw": 178,
+			"type": "scene",
+			"text": "(D)Courtyard Near Main Hall",
+			"sceneId": "tangxi_courtyard_near_main_hall"
+		}
+	]
+},
+"tangxi_courtyard_near_main_hall": {
+	"title": "(D)Courtyard Near Main Hall",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/tangxi/tangxi_courtyard_near_main_hall",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -28,
+			"yaw": -1,
+			"type": "scene",
+			"text": "(C)Courtyard near stage",
+			"sceneId": "tangxi_courtyard_near_stage"
+		},
+		{
+			"pitch": -15,
+			"yaw": 178,
+			"type": "scene",
+			"text": "(E)Dragon King Temple",
+			"sceneId": "tangxi_dragon_king_temple"
+		}
+	]
+},
+	"tangxi_dragon_king_temple": {
+		"title": "(E)Dragon King Temple",
+		"type": "multires",
+		"multiRes": {
+				"basePath": "panos/tangxi/tangxi_dragon_king_temple",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 4,
+				"cubeResolution": 2224
+		},
+		"panoNorthOffSet": 180,
+		"yaw": -77,
+		"map": {
+			"position": "120,590"
+		},
+		"hotSpots": [
+			{
+				"pitch": -28,
+				"yaw": -21,
+				"type": "scene",
+				"text": "(D)Courtyard Near Main Hall",
+				"sceneId": "tangxi_courtyard_near_main_hall"
+			},
+			{
+				"pitch": -28,
+				"yaw": 30,
+				"type": "scene",
+				"text": "(F)Bearing Children Cloister",
+				"sceneId": "tangxi_bearing_children_cloister"
+			}
+		]
+	},
+	"tangxi_bearing_children_cloister": {
+		"title": "(F)Bearing Children Cloister",
+		"type": "multires",
+		"multiRes": {
+				"basePath": "panos/tangxi/tangxi_bearing_children_cloister",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 4,
+				"cubeResolution": 2224
+		},
+		"panoNorthOffSet": 180,
+		"yaw": -77,
+		"map": {
+			"position": "120,590"
+		},
+		"hotSpots": [
+			{
+				"pitch": -28,
+				"yaw": -21,
+				"type": "scene",
+				"text": "(E)Dragon King Temple",
+				"sceneId": "tangxi_dragon_king_temple"
+			},
+			{
+				"pitch": -28,
+				"yaw": 22,
+				"type": "scene",
+				"text": "(G)Main Hall South",
+				"sceneId": "tangxi_main_hall_south"
+			}
+		]
+	},
+	"tangxi_main_hall_south": {
+		"title": "(G)Main Hall South",
+		"type": "multires",
+		"multiRes": {
+				"basePath": "panos/tangxi/tangxi_main_hall_south",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 4,
+				"cubeResolution": 2224
+		},
+		"panoNorthOffSet": 180,
+		"yaw": -77,
+		"map": {
+			"position": "120,590"
+		},
+		"hotSpots": [
+			{
+				"pitch": -9,
+				"yaw": -9,
+				"type": "scene",
+				"text": "(F)Bearing Children Cloister",
+				"sceneId": "tangxi_bearing_children_cloister"
+			},
+			{
+				"pitch": -9,
+				"yaw": 4,
+				"type": "scene",
+				"text": "(H)Main Hall North",
+				"sceneId": "tangxi_main_hall_north"
+			}
+		]
+	},
+	"tangxi_main_hall_south": {
+		"title": "(H)Main Hall North",
+		"type": "multires",
+		"multiRes": {
+				"basePath": "panos/tangxi/tangxi_main_hall_north",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 4,
+				"cubeResolution": 2224
+		},
+		"panoNorthOffSet": 180,
+		"yaw": -77,
+		"map": {
+			"position": "120,590"
+		},
+		"hotSpots": [
+		{
+		"pitch": -12,
+		"yaw": -14,
+		"type": "scene",
+		"text": "(G)Main Hall South",
+		"sceneId": "tangxi_main_hall_south"
+	},
+	{
+		"pitch": -12,
+		"yaw": 16,
+		"type": "scene",
+		"text": "(I)Rear Hall",
+		"sceneId": "tangxi_rear_hall"
+	}
+]
+},
+"tangxi_rear_hall": {
+	"title": "(I)Rear Hall",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/tangxi/tangxi_rear_hall",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+
+]
+}
+}
+}

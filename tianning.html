@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pannellum</title>
+  <link type="text/css" rel="Stylesheet" href="src/css/pannellum.css"/>
+  <style type="text/css">
+  #inset_map {
+    background-image: url('map/houwu_map.jpeg');
+    background-size: 100% 100%;
+    float: right;
+    top: -2px;
+    right: 2px;
+    vertical-align: top;
+    padding: 10px 0 0 10px;
+    width: 189px;
+    height: 275px;
+    background-color: #fff;
+    opacity: 0.7;
+    z-index: 1000;
+    position: relative;
+    -moz-box-shadow: 5px 5px 5px #888;
+    -webkit-box-shadow: 5px 5px 5px #888;
+    box-shadow: 5px 5px 5px #888;
+   }
+   .pnlm-compass {
+     opacity: 0.0;
+   }
+
+   .text-hotspot {
+      height: 26px;
+      width: 26px;
+      border-radius: 13px;
+      background-color: #f4f4f4;
+      background-image: url('src/css/img/text_icon.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 14px, 14px;
+      cursor: pointer;
+   }
+   #close-popup {
+     position: absolute;
+     z-index: 101;
+     top: 10px;
+     right: 10px;
+     cursor: pointer;
+   }
+   #popup-back{
+     position: absolute;
+     z-index: 101;
+     top: 0px;
+     left: 10px;
+     background-color: #fff;
+     padding: 5px 10px;
+   }
+   #popup-text {
+     overflow-y: scroll;
+     padding: 5px 10px;
+     height: 230px;
+   }
+   div.tooltip-popup {
+       visibility: hidden;
+       position: fixed;
+       top: 30px;
+       left: 50px;
+       border-radius: 3px;
+       background-color: #fff;
+       color: #000;
+       width: 730px;
+       height: 250px;
+       padding: 5px 10px;
+       cursor: default;
+       z-index: 100;
+       -moz-box-shadow: 5px 5px 5px #888;
+       -webkit-box-shadow: 5px 5px 5px #888;
+       box-shadow: 5px 5px 5px #888;
+   }
+   div.tooltip-popup:hover {
+       visibility: visible;
+   }
+   div.tooltip-popup:hover:after {
+       content: '';
+       position: absolute;
+       width: 0;
+       height: 0;
+       border-width: 10px;
+       border-style: solid;
+       border-color: #fff transparent transparent transparent;
+       bottom: -20px;
+       left: -10px;
+       margin: 0 50%;
+   }
+
+  svg .dropshadow { cursor:crosshair;
+            -moz-box-shadow: -5px -5px 5px #888;
+            -webkit-box-shadow: -5px -5px 5px #888;
+            box-shadow: -5px -5px 5px #888;
+    }
+  </style>
+
+</head>
+<body>
+<div id="container">
+  <noscript>
+    <div class="pnlm-info-box">
+      <p>Javascript is required to view this panorama.<br>(It could be worse; you could need a plugin.)</p>
+    </div>
+  </noscript>
+</div>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- <script src="jquery.min.js"></script> -->
+<script type="text/javascript" src="src/js/libpannellum.js"></script>
+<script type="text/javascript" src="src/js/RequestAnimationFrame.js"></script>
+<script type="text/javascript" src="src/js/pannellum.js"></script>
+<script type="text/javascript" src="map/map.js"></script>
+
+<script type="text/javascript">
+
+
+var map = document.createElement('div');
+map.id = 'inset_map';
+map.className = 'pnlm-insetmap pnlm-controls pnlm-control';
+map.innerHTML = '<object id="mapsvg" type="image/svg+xml"></object>';
+
+
+function CLtextHotspot(hotSpotDiv, args) {
+      hotSpotDiv.classList.add('text-tooltip');
+      hotSpotDiv.setAttribute('onclick', 'showTooltipPopUp("' + args +'")');
+}
+
+function showTooltipPopUp( omekaID, backToID ) {
+  var baseurl  = "https://chinalocal.omeka.fas.harvard.edu/api/items";
+  var key      = "1d4c7eb87aed441e66b5ec46b1af9516f00be0d8";
+  var omekaAPI = baseurl + "/" + omekaID + "/?key=" + key;
+
+  var content = '';
+
+  if (backToID == null )
+      document.getElementById("popup-back").innerHTML = ''
+  else
+      document.getElementById("popup-back").innerHTML =
+          '<a href="#" onclick="showTooltipPopUp(\'' + backToID+ '\')">⬅ Back</a><br/>'
+
+  var jqxhr = $.getJSON( omekaAPI, function( json ) {
+      for ( var el in  json.element_texts ) {
+        if ( json.element_texts[el].element.name == "Title" )
+              content += "<h3>" + json.element_texts[el].text + "</h3>";
+
+        if ( json.element_texts[el].element.name == "Text" )
+              content += json.element_texts[el].text;
+      }
+
+      document.getElementById("popup-text").innerHTML = content;
+      document.getElementById("popup").style.visibility = "visible";
+
+    });
+    document.getElementById("popup-text").scrollTop = 0;
+}
+
+function closeTooltipPopUp () {
+  document.getElementById("popup").style.visibility = "hidden";
+  document.getElementById("popup-text").innerHTML = '';
+}
+
+  Map.run({
+      panoramaConfig: "tianning.json",
+      mapSvgId: "mapsvg"
+  });
+
+document.getElementById("container").appendChild(map);
+
+
+// create a popup modal window for the longer texts
+var div1 = document.createElement('div');
+div1.classList.add('tooltip-popup');
+div1.id = "popup";
+
+var div2 = document.createElement('div');
+div2.id = "close-popup";
+div2.setAttribute('onclick', 'closeTooltipPopUp()');
+div2.innerHTML = 'X';
+div1.appendChild(div2);
+
+var div3 = document.createElement('div');
+div3.id = "popup-text";
+div1.appendChild(div3);
+
+var div4 = document.createElement('div');
+div4.id = "popup-back";
+div1.appendChild(div4);
+
+document.getElementById("container").appendChild(div1);
+
+</script>
+</body>
+</html>

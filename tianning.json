@@ -1,0 +1,105 @@
+{
+	"default": {
+		"author": "Peter Bol & Michael Szonyi",
+		"firstScene": "tianning_across_street",
+		"sceneFadeDuration": 2000,
+		"autoLoad": true,
+		"fallback": "",
+		"northOffset": -20,
+		"minPitch": -35,
+		"maxPitch": 35,
+		"hotSpotDebug": true,
+		"compass": true
+	},
+
+	"default_extras": {
+		"firstScene": "tianning_across_street",
+		"hotSpotDebug": true,
+    "compass": true
+  },
+
+	"scenes": {
+		"tianning_across_street": {
+			"title": "(A)Across the Street ",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/tianning/tianning_across_street",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -8,
+					"yaw": 163,
+					"type": "scene",
+					"text": "(B)Main Hall Exterior",
+					"sceneId": "tianning_main_hall_exterior"
+				}
+			]
+		},
+		"tianning_main_hall_exterior": {
+			"title": "(B)Main Hall Exterior",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/tianning/tianning_main_hall_exterior",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -8,
+					"yaw": -83,
+					"type": "scene",
+					"text": "(A)Across the Street",
+					"sceneId": "tianning_across_street"
+				},
+				{
+					"pitch": -10,
+					"yaw": 113,
+					"type": "scene",
+					"text": "(C)Main Hall Interior",
+					"sceneId": "tianning_main_hall_interior"
+				}
+			]
+		},
+		"tianning_main_hall_interior": {
+			"title": "(C)Main Hall Interior",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/tianning/tianning_main_hall_interior",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+
+			]
+		}
+	}
+}

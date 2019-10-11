@@ -1,0 +1,203 @@
+{
+	"default": {
+		"author": "Peter Bol & Michael Szonyi",
+		"firstScene": "li_villiage_pond_view",
+		"sceneFadeDuration": 2000,
+		"autoLoad": true,
+		"fallback": "",
+		"northOffset": -20,
+		"minPitch": -35,
+		"maxPitch": 35,
+		"hotSpotDebug": true,
+		"compass": true
+	},
+
+	"default_extras": {
+		"firstScene": "villiage_pond_view",
+		"hotSpotDebug": true,
+    "compass": true
+  },
+
+	"scenes": {
+		"li_villiage_pond_view": {
+			"title": "(A) View of Pond ",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/li_v/li_villiage_pond_view",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -8,
+					"yaw": -83,
+					"type": "scene",
+					"text": "(B)View from Reflecting the Moon Pavalion",
+					"sceneId": "li_villiage_yingyue_ting"
+				}
+			]
+		},
+		"li_villiage_yingyue_ting": {
+			"title": "(B)View from Reflecting the Moon Pavalion",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/li_v/li_villiage_yingyue_ting",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -27,
+					"yaw": -62,
+					"type": "scene",
+					"text": "(A)View of Pond",
+					"sceneId": "li_villiage_pond_view"
+				},
+		{	"pitch": -25,
+			"yaw": -112,
+			"type": "scene",
+			"text": "(C2)Auditorium Interior",
+			"sceneId": "li_villiage_auditorium_interior"
+		}
+	]
+},
+"li_villiage_auditorium_interior": {
+	"title": "(C2)Auditorium Interior",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/li_v/li_villiage_auditorium_interior",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -8,
+			"yaw": 59,
+			"type": "scene",
+			"text": "(B)View from Reflecting the Moon Pavalion",
+			"sceneId": "li_villiage_yingyue_ting"
+		},
+{	"pitch": -6,
+"yaw": -118,
+"type": "scene",
+"text": "(D1)Happy Harmony Hall Exterior",
+"sceneId": "li_villiage_happy_harmony_exterior"
+}
+]
+},
+"li_villiage_happy_harmony_exterior": {
+	"title": "(D1)Happy Harmony Hall Exterior",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/li_v/li_villiage_happy_harmony_exterior",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -8,
+			"yaw": 59,
+			"type": "scene",
+			"text": "(C2)Auditorium Interior",
+			"sceneId": "li_villiage_auditorium_interior"
+		},
+{	"pitch": -25,
+"yaw": -112,
+"type": "scene",
+"text": "(D2)Happy Harmony Hall Outer Courtyard",
+"sceneId": "li_villiage_happy_harmony_outer"
+}
+]
+},
+"li_villiage_happy_harmony_outer": {
+	"title": "(D2)Happy Harmony Hall Outer Courtyard",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/li_v/li_villiage_happy_harmony_outer",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		{
+			"pitch": -8,
+			"yaw": -9,
+			"type": "scene",
+			"text": "(D1)Happy Harmony Hall Exterior",
+			"sceneId": "li_villiage_happy_harmony_exterior"
+		},
+{	"pitch": -9,
+"yaw": 8,
+"type": "scene",
+"text": "(G)Market Near Main Gate",
+"sceneId": "li_villiage_market"
+}
+]
+},
+"li_villiage_market": {
+	"title": "(G)Market Near Main Gate",
+	"type": "multires",
+	"multiRes": {
+			"basePath": "panos/li_v/li_villiage_market",
+			"path": "/%l/%s%y_%x",
+			"fallbackPath": "/fallback/%s",
+			"extension": "jpg",
+			"tileResolution": 512,
+			"maxLevel": 4,
+			"cubeResolution": 2224
+	},
+	"panoNorthOffSet": 180,
+	"yaw": -77,
+	"map": {
+		"position": "120,590"
+	},
+	"hotSpots": [
+		
+]
+}
+}
+}

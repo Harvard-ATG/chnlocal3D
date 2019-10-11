@@ -1,0 +1,757 @@
+{
+	"default": {
+		"author": "Peter Bol & Michael Szonyi",
+		"firstScene": "guodong_west_gate_ximen",
+		"sceneFadeDuration": 2000,
+		"autoLoad": true,
+		"fallback": "",
+		"northOffset": -20,
+		"minPitch": -35,
+		"maxPitch": 35,
+		"hotSpotDebug": true,
+		"compass": true
+	},
+
+	"default_extras": {
+		"firstScene": "guodong_west_gate_ximen",
+		"hotSpotDebug": true,
+    "compass": true
+  },
+
+	"scenes": {
+		"guodong_west_gate_ximen": {
+			"title": "(A)West Gate",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/guodong/guodong_west_gate_ximen",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -14,
+					"yaw": 109,
+					"type": "scene",
+					"text": "(B) Water Mouth",
+					"sceneId": "guodong_water_mouth"
+				}
+			]
+		},
+    "guodong_water_mouth": {
+      "title": "(B) Water Mouth",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_water_mouth",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -26,
+          "yaw": 136,
+          "type": "scene",
+          "text": "(A) West Gate",
+          "sceneId": "guodong_west_gate_ximen"
+        },
+        {
+          "pitch": -19,
+          "yaw": -45,
+          "type": "scene",
+          "text": "(C) Returning Dragon Bridge",
+          "sceneId": "guodong_returning_dragon_bridge"
+        }
+      ]
+    },
+    "guodong_returning_dragon_bridge": {
+      "title": "(C) Returning Dragon Bridge",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_returning_dragon_bridge",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -26,
+          "yaw": -73,
+          "type": "scene",
+          "text": "(B) Water Mouth",
+          "sceneId": "guodong_water_mouth"
+        },
+        {
+          "pitch": -29,
+          "yaw": 117,
+          "type": "scene",
+          "text": "(D1)Hanlin Court Exterior",
+          "sceneId": "guodong_hailin_court_exterior"
+        }
+      ]
+    },
+    "guodong_hailin_court_exterior": {
+      "title": "(D1)Hanlin Court Exterior",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_hailin_court_exterior",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -31,
+          "yaw": -52,
+          "type": "scene",
+          "text": "(C) Return Dragon Bridge",
+          "sceneId": "guodong_returning_dragon_bridge"
+        },
+        {
+          "pitch": -29,
+          "yaw": 167,
+          "type": "scene",
+          "text": "(D2)Hanlin Court Shrine of Lord Guan",
+          "sceneId": "guodong_hailin_court_shrine_of_Guan"
+        }
+      ]
+    },
+    "guodong_hailin_court_shrine_of_Guan": {
+      "title": "(D2)Hanlin Court Shrine of Lord Guan",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_hailin_court_shrine_of_Guan",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -21,
+          "yaw": 134,
+          "type": "scene",
+          "text": "(D1)Hanlin Court Exterior",
+          "sceneId": "guodong_hailin_court_exterior"
+        },
+        {
+          "pitch": -24,
+          "yaw": -57,
+          "type": "scene",
+          "text": "(D3)Hailin Court Chamber of Guanyin of the Southern Ocean",
+          "sceneId": "guodong_chamber_of_guanyin"
+        }
+      ]
+    },
+    "guodong_chamber_of_guanyin": {
+      "title": "(D3)Hailin Court Chamber of Guanyin of the Southern Ocean",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_chamber_of_guanyin",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -21,
+          "yaw": 134,
+          "type": "scene",
+          "text": "(D2)Hanlin Court Shrine of Lord Guan",
+          "sceneId": "guodong_hailin_court_shrine_of_Guan"
+        },
+
+        {
+          "pitch": -23,
+          "yaw": 157,
+          "type": "scene",
+          "text": "(E)Path between Sea and Unicorn Chamber and Guodong Primary School ",
+          "sceneId": "guodong_path_between_sea_and_unicorn"
+        }
+      ]
+    },
+    "guodong_path_between_sea_and_unicorn": {
+      "title": "(E)Path between Sea and Unicorn Chamber and Guodong Primary School ",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_path_between_sea_and_unicorn",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -21,
+          "yaw": 10,
+          "type": "scene",
+          "text": "(D3)Hailin Court Chamber of Guanyin of the Southern Ocean",
+          "sceneId": "guodong_chamber_of_guanyin"
+        },
+        {
+          "pitch": -24,
+          "yaw": -177,
+          "type": "scene",
+          "text": "(F1)He Lineage Ancestral Hall Exterior",
+          "sceneId": "guodong_he_lineage_ancestral_hall"
+        }
+      ]
+    },
+    "guodong_he_lineage_ancestral_hall": {
+      "title": "(F1)He Lineage Ancestral Hall Exterior",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_he_lineage_ancestral_hall",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -19,
+          "yaw": -10,
+          "type": "scene",
+          "text": "(E)Path between Sea and Unicorn Chamber and Guodong Primary School ",
+          "sceneId": "guodong_path_between_sea_and_unicorn"
+        },
+        {
+          "pitch": -16,
+          "yaw": -77,
+          "type": "scene",
+          "text": "(F2)He Lineage Ancestral Hall, Opera Stage",
+          "sceneId": "guodong_he_lineage_opera_stage"
+        }
+      ]
+    },
+    "guodong_he_lineage_opera_stage": {
+      "title": "(F2)He Lineage Ancestral Hall, Opera Stage",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_he_lineage_opera_stage",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -22,
+          "yaw": -125,
+          "type": "scene",
+          "text": "(F1)He Lineage Ancestral Hall Exterio ",
+          "sceneId": "guodong_he_lineage_ancestral_hall"
+        },
+        {
+          "pitch": -19,
+          "yaw": -12,
+          "type": "scene",
+          "text": "(F4)He Lineage Ancestral Hall, Back Hall",
+          "sceneId": "guodong_he_lineage_back_hall"
+        }
+      ]
+    },
+    "guodong_he_lineage_back_hall": {
+      "title": "(F4)He Lineage Ancestral Hall, Back Hall",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_he_lineage_back_hall",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -16,
+          "yaw": 26,
+          "type": "scene",
+          "text": "(F2)He Lineage Ancestral Hall Opera Stage ",
+          "sceneId": "guodong_he_lineage_opera_stage"
+        },
+        {
+          "pitch": -16,
+          "yaw": 3,
+          "type": "scene",
+          "text": "(G)Between He Lineage Ancestral Hall and Xinwu Li",
+          "sceneId": "guodong_between_he_lineage_hall_and_xinwu_li"
+        }
+      ]
+    },
+    "guodong_between_he_lineage_hall_and_xinwu_li": {
+      "title": "(G)Between He Lineage Ancestral Hall and Xinwu Li",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_between_he_lineage_hall_and_xinwu_li",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -16,
+          "yaw": -46,
+          "type": "scene",
+          "text": "(F4)He Lineage Ancestral Hall Back Hall",
+          "sceneId": "guodong_he_lineage_back_hall"
+        },
+        {
+          "pitch": -16,
+          "yaw": 3,
+          "type": "scene",
+          "text": "(H1)Xinwu Li, Front Courtyard",
+          "sceneId": "guodong_xinwu_li"
+        }
+      ]
+    },
+    "guodong_xinwu_li": {
+      "title": "(H1)Xinwu Li, Front Courtyard",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_xinwu_li",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -23,
+          "yaw": 106,
+          "type": "scene",
+          "text": "(G)Between He Lineage Ancestral Hall and Xinwu Li",
+          "sceneId": "guodong_between_he_lineage_hall_and_xinwu_li"
+        },
+        {
+          "pitch": -23,
+          "yaw": 126,
+          "type": "scene",
+          "text": "(H2)Xinwu Li, Back Courtyard",
+          "sceneId": "guodong_xinwu_li_rear_yard"
+        }
+      ]
+    },
+    "guodong_xinwu_li_rear_yard": {
+      "title": "(H2)Xinwu Li, Back Courtyard",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_xinwu_li_rear_yard",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -30,
+          "yaw": 7,
+          "type": "scene",
+          "text": "(H1)Xinwu Li, Front Courtyard",
+          "sceneId": "guodong_xinwu_li"
+        },
+        {
+          "pitch": -28,
+          "yaw": 1,
+          "type": "scene",
+          "text": "(I)Arch of Chastity and Filial Piety",
+          "sceneId": "guodong_arch_of_chasitity"
+        }
+      ]
+    },
+    "guodong_arch_of_chasitity": {
+      "title": "(I)Arch of Chastity and Filial Piety",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_arch_of_chasitity",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -16,
+          "yaw": 83,
+          "type": "scene",
+          "text": "(H2)Xinwu Li, Back Courtyard",
+          "sceneId": "guodong_xinwu_li_rear_yard"
+        },
+        {
+          "pitch": -23,
+          "yaw": 126,
+          "type": "scene",
+          "text": "(J1)Temple of God of Literature, First Floor",
+          "sceneId": "guodong_temple_of_god_of_literature_first_floor"
+        }
+      ]
+    },
+    "guodong_temple_of_god_of_literature_first_floor": {
+      "title": "(J1)Temple of God of Literature, First Floor",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_temple_of_god_of_literature_first_floor",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -23,
+          "yaw": 106,
+          "type": "scene",
+          "text": "(I)Arch of Chastity and Filial Piety",
+          "sceneId": "guodong_arch_of_chasitity"
+        },
+        {
+          "pitch": -13,
+          "yaw": -111,
+          "type": "scene",
+          "text": "(J2)Temple of the God of Literature, Second Floor",
+          "sceneId": "guodong_temple_of_god_of_literature_second_floor"
+        }
+      ]
+    },
+    "guodong_temple_of_god_of_literature_second_floor": {
+      "title": "(J2)Temple of the God of Literature, Second Floor",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_temple_of_god_of_literature_second_floor",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -25,
+          "yaw": 98,
+          "type": "scene",
+          "text": "(J1)Temple of God of Literature, First Floor",
+          "sceneId": "guodong_temple_of_god_of_literature_first_floor"
+        },
+        {
+          "pitch": -25,
+          "yaw": 9,
+          "type": "scene",
+          "text": "(K1)Precious Spring Inn, Exterior",
+          "sceneId": "guodong_precious_spring_inn"
+        }
+      ]
+    },
+    "guodong_precious_spring_inn": {
+      "title": "(K1)Precious Spring Inn, Exterior",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_precious_spring_inn",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -25,
+          "yaw": 177,
+          "type": "scene",
+          "text": "(J2)Temple of the God of Literature, Second Floor",
+          "sceneId": "guodong_temple_of_god_of_literature_second_floor"
+        },
+        {
+          "pitch": -4,
+          "yaw": -109,
+          "type": "scene",
+          "text": "(K2)Precious Spring Inn, Front Hall",
+          "sceneId": "guodong_Precious_Spring_Inn_Front_Hall"
+        }
+      ]
+    },
+    "guodong_Precious_Spring_Inn_Front_Hall": {
+      "title": "(K2)Precious Spring Inn, Front Hall",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_Precious_Spring_Inn_Front_Hall",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -19,
+          "yaw": -2,
+          "type": "scene",
+          "text": "(K1)Precious Spring Inn, Exterior",
+          "sceneId": "guodong_precious_spring_inn"
+        },
+        {
+          "pitch": -8,
+          "yaw": 177,
+          "type": "scene",
+          "text": "(K3)Precious Spring Inn, Main Hall Front",
+          "sceneId": "guodong_villiage_precious_spring_inn_main_hall"
+        }
+      ]
+    },
+    "guodong_villiage_precious_spring_inn_main_hall": {
+      "title": "(K3)Precious Spring Inn, Main Hall Front",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_villiage_precious_spring_inn_main_hall",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -13,
+          "yaw": 165,
+          "type": "scene",
+          "text": "(K2)Precious Spring Inn, Front Hall",
+          "sceneId": "guodong_Precious_Spring_Inn_Front_Hall"
+        },
+        {
+          "pitch": -16,
+          "yaw": 45,
+          "type": "scene",
+          "text": "(K4)Precious Spring Inn, Main Hall Back",
+          "sceneId": "guodong_villiage_precious_spring_inn_back"
+        }
+      ]
+    },
+    "guodong_villiage_precious_spring_inn_back": {
+      "title": "(K4)Precious Spring Inn, Main Hall Back",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_villiage_precious_spring_inn_back",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -9,
+          "yaw": -1,
+          "type": "scene",
+          "text": "(K3)Precious Spring Inn, Main Hall Front",
+          "sceneId": "guodong_villiage_precious_spring_inn_main_hall"
+        },
+        {
+          "pitch": -21,
+          "yaw": 152,
+          "type": "scene",
+          "text": "(L)Upper Guodong, Community Hall Square",
+          "sceneId": "guodong_upper_community_hall"
+        }
+      ]
+    },
+    "guodong_upper_community_hall": {
+      "title": "(L)Upper Guodong, Community Hall Square",
+      "type": "multires",
+      "multiRes": {
+          "basePath": "panos/guodong/guodong_upper_community_hall",
+          "path": "/%l/%s%y_%x",
+          "fallbackPath": "/fallback/%s",
+          "extension": "jpg",
+          "tileResolution": 512,
+          "maxLevel": 4,
+          "cubeResolution": 2224
+      },
+      "panoNorthOffSet": 180,
+      "yaw": -77,
+      "map": {
+        "position": "120,590"
+      },
+      "hotSpots": [
+        {
+          "pitch": -1,
+          "yaw": -40,
+          "type": "scene",
+          "text": "(K4)Precious Spring Inn, Main Hall Back",
+          "sceneId": "guodong_villiage_precious_spring_inn_back"
+        },
+        {
+          "pitch": -16,
+          "yaw": -152,
+          "type": "scene",
+          "text": "(M)Overview of Upper Guodong",
+          "sceneId": "guodong_overview_upper"
+        }
+      ]
+    },
+     "guodong_overview_upper":
+     {
+       "title": "(M)Overview of Upper Guodong ",
+       "type": "multires",
+       "multiRes": {
+         "basePath": "panos/guodong/guodong_overview_upper",
+         "path": "/%l/%s%y_%x",
+         "fallbackPath": "/fallback/%s",
+         "extension": "jpg",
+         "tileResolution": 512,
+         "maxLevel": 4,
+         "cubeResolution": 2224 },
+         "panoNorthOffSet": 180,
+         "yaw": -77,
+         "map": {
+         "position": "120,590"
+            },
+            "hotSpots": [
+               { "pitch": -9,
+                 "yaw": -1,
+                 "type": "scene",
+                 "text": "(L)Upper Guodong, Community Hall Square",
+                 "sceneId": "guodong_upper_community_hall" },
+                 { "pitch": -4,
+                   "yaw": 32,
+                   "type": "scene",
+                   "text": "(A)West Gate",
+                   "sceneId": "guodong_west_gate_ximen" } ] } } }

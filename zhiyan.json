@@ -1,0 +1,412 @@
+{
+	"default": {
+		"author": "Peter Bol & Michael Szonyi",
+		"firstScene": "zhiyan_villiage_half_moon",
+		"sceneFadeDuration": 2000,
+		"autoLoad": true,
+		"fallback": "",
+		"northOffset": -20,
+		"minPitch": -35,
+		"maxPitch": 35,
+		"hotSpotDebug": true,
+		"compass": true
+	},
+
+		"default_extras": {
+			"firstScene": "zhiyan_villiage_half_moon",
+			"hotSpotDebug": true,
+	    "compass": true
+	  },
+
+	"scenes": {
+		"zhiyan_villiage_half_moon": {
+			"title": "(A)Half Moon Reservoir",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/zhiyan/zhiyan_villiage_half_moon",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -10,
+					"yaw": -109,
+					"type": "scene",
+					"text": "(B1)The Hall of Continuing Virtue Exterior",
+					"sceneId": "Zhiyan_villiage_continuing_virture_exterior"
+				}
+			]
+		},
+		"Zhiyan_villiage_continuing_virture_exterior": {
+			"title": "(B1)The Hall of Continuing Virtue Exterior",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/zhiyan/Zhiyan_villiage_continuing_virture_exterior",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -22,
+					"yaw": -168,
+					"type": "scene",
+					"text": "(A)Half Moon Reservoir",
+					"sceneId": "zhiyan_villiage_half_moon"
+				},
+				{
+					"pitch": -9,
+					"yaw": -17,
+					"type": "scene",
+					"text": "(B2)The Hall of Continuing Virtue",
+					"sceneId": "zhiyan_villiage_continuing_virture_hall"
+				}
+			]
+		},
+		"zhiyan_villiage_continuing_virture_hall": {
+			"title": "(B2)The Hall of Continuing Virtue",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/zhiyan/zhiyan_villiage_continuing_virture_hall",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -8,
+					"yaw": 111,
+					"type": "scene",
+					"text": "(B1)The Hall of Continuing Virtue Exterior",
+					"sceneId": "Zhiyan_villiage_continuing_virture_exterior"
+				},
+				{
+					"pitch": -8,
+					"yaw": 121,
+					"type": "scene",
+					"text": "(C1)The Hall of Succeeding Glory Front",
+					"sceneId": "zhiyan_villiage_chengxian_front"
+				}
+			]
+		},
+		"zhiyan_villiage_chengxian_front": {
+			"title": "(C1)The Hall of Succeeding Glory Front",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/zhiyan/zhiyan_villiage_chengxian_front",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -9,
+					"yaw": -18,
+					"type": "scene",
+					"text": "(B2)The Hall of Continuing Virtue",
+					"sceneId": "zhiyan_villiage_continuing_virture_hall"
+				},
+				{
+					"pitch": -9,
+					"yaw": -37,
+					"type": "scene",
+					"text": "(C2)The Hall of Succeeding Glory Back",
+					"sceneId": "zhiyan_villiage_chengxian_backroom"
+				}
+			]
+		},
+		"zhiyan_villiage_chengxian_backroom": {
+			"title": "(C2)The Hall of Succeeding Glory Back",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/zhiyan/zhiyan_villiage_chengxian_backroom",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -9,
+					"yaw": 18,
+					"type": "scene",
+					"text": "(C1)The Hall of Succeeding Glory Front",
+					"sceneId": "zhiyan_villiage_chengxian_front"
+				},
+				{
+					"pitch": -8,
+					"yaw": -21,
+					"type": "scene",
+					"text": "(D1)Entrance to the Hall of Promoting Goodness Exterior",
+					"sceneId": "zhiyan_villiage_entrance_jimei_tang"
+				}
+			]
+		},
+		"zhiyan_villiage_entrance_jimei_tang": {
+			"title": "(D1)Entrance to the Hall of Promoting Goodness Exterior",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/zhiyan/zhiyan_villiage_entrance_jimei_tang",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -15,
+					"yaw": -13,
+					"type": "scene",
+					"text": "(C2)The Hall of Succeeding Glory Back",
+					"sceneId": "zhiyan_villiage_chengxian_backroom"
+				},
+				{
+					"pitch": -22,
+					"yaw": 77,
+					"type": "scene",
+					"text": "(D2)Entrance to the Hall of Promoting Goodness",
+					"sceneId": "zhiyan_villiage_entrance_jimei_tang_2"
+				}
+			]
+		},
+		"zhiyan_villiage_entrance_jimei_tang_2": {
+			"title": "(D2)Entrance to the Hall of Promoting Goodness",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/zhiyan/zhiyan_villiage_entrance_jimei_tang_2",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -11,
+					"yaw": -77,
+					"type": "scene",
+					"text": "(D1)Entrance to the Hall of Promoting Goodness Exterior",
+					"sceneId": "zhiyan_villiage_entrance_jimei_tang"
+				},
+				{
+					"pitch": -11,
+					"yaw": -64,
+					"type": "scene",
+					"text": "(E1)The Hall of Filial Devotion, Xiaosi Tang",
+					"sceneId": "zhiyan_villiage_xiaosi_tang_exterior"
+				}
+			]
+		},
+		"zhiyan_villiage_xiaosi_tang_exterior": {
+			"title": "(E1)The Hall of Filial Devotion, Xiaosi Tang",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/zhiyan/zhiyan_villiage_xiaosi_tang_exterior",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -7,
+					"yaw": 35,
+					"type": "scene",
+					"text": "(D2)Entrance to the Hall of Promoting Goodness",
+					"sceneId": "zhiyan_villiage_entrance_jimei_tang_2"
+				},
+				{
+					"pitch": -7,
+					"yaw": 45,
+					"type": "scene",
+					"text": "(E2)The Hall of Filial Devotion Front Hall",
+					"sceneId": "zhiyan_villiage_xiaosi_tang_front"
+				}
+			]
+		},
+		"zhiyan_villiage_xiaosi_tang_front": {
+			"title": "(E2)The Hall of Filial Devotion Front Hall",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/zhiyan/zhiyan_villiage_xiaosi_tang_front",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -21,
+					"yaw": -175,
+					"type": "scene",
+					"text": "(E1)The Hall of Filial Devotion, Xiaosi Tang",
+					"sceneId": "zhiyan_villiage_xiaosi_tang_exterior"
+				},
+				{
+					"pitch": -21,
+					"yaw": 8,
+					"type": "scene",
+					"text": "(E3)The Hall of Filial Devotion Back Hall",
+					"sceneId": "zhiyan_villiage_xiaosi_back"
+				}
+			]
+		},
+		"zhiyan_villiage_xiaosi_back": {
+			"title": "(E3)The Hall of Filial Devotion Back Hall",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/zhiyan/zhiyan_villiage_xiaosi_back",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -11,
+					"yaw": 78,
+					"type": "scene",
+					"text": "(E2)The Hall of Filial Devotion Front Hall",
+					"sceneId": "zhiyan_villiage_xiaosi_tang_front"
+				},
+				{
+					"pitch": -11,
+					"yaw": 120,
+					"type": "scene",
+					"text": "(F1)The Hall of Abundant Splendor Exterior",
+					"sceneId": "zhiyan_guangyu_tang"
+				}
+			]
+		},
+
+		"zhiyan_guangyu_tang": {
+			"title": "(F1)The Hall of Abundant Splendor Exterior",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/zhiyan/zhiyan_guangyu_tang",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -19,
+					"yaw": 132,
+					"type": "scene",
+					"text": "(E3)The Hall of Filial Devotion Back Hall",
+					"sceneId": "zhiyan_villiage_xiaosi_back"
+				},
+				{
+					"pitch": -19,
+					"yaw": -24,
+					"type": "scene",
+					"text": "(F2)The Hall of Abundant Splendor",
+					"sceneId": "zhiyan_villiage_guangyu_tang2"
+				}
+			]
+		},
+		"zhiyan_villiage_guangyu_tang2": {
+			"title": "(F2)The Hall of Abundant Splendor",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/zhiyan/zhiyan_villiage_guangyu_tang2",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+
+			]
+		}
+	}
+}
