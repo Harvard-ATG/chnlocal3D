@@ -116,20 +116,20 @@ window.Map = (function($, pannellum) {
 		// console.log("Map settings for scene ", this.panoramaSceneId, scene.map);
 	};
 	Map.prototype.updateMarker = function() {
-		var sceneId = this.panoramaSceneId;
-		var scene = this.panoramaData.scenes[sceneId];
-		var position = scene.map && scene.map.position && scene.map.position.split(',');
-		var panoNorthOffSet = scene.panoNorthOffSet;
-		if(position) {
-			var degrees = this.viewer.getYaw() + panoNorthOffSet + this.viewer.getNorthOffset();
-			this.marker.moveTo({ x: position[0], y: position[1] });
-			this.marker.rotate({ degrees: degrees });
-			this.marker.show(true);
-			//console.log("updateMarker(): ", sceneId, "position: ", position, "rotation:", degrees);
-		} else {
-			this.marker.show(false);
-			//console.log("updateMarker(): ", sceneId, "position not defined!");
-		}
+		// var sceneId = this.panoramaSceneId;
+		// var scene = this.panoramaData.scenes[sceneId];
+		// var position = scene.map && scene.map.position && scene.map.position.split(',');
+		// var panoNorthOffSet = scene.panoNorthOffSet;
+		// if(position) {
+		// 	var degrees = this.viewer.getYaw() + panoNorthOffSet + this.viewer.getNorthOffset();
+		// 	this.marker.moveTo({ x: position[0], y: position[1] });
+		// 	this.marker.rotate({ degrees: degrees });
+		// 	this.marker.show(true);
+		// 	//console.log("updateMarker(): ", sceneId, "position: ", position, "rotation:", degrees);
+		// } else {
+		// 	this.marker.show(false);
+		// 	//console.log("updateMarker(): ", sceneId, "position not defined!");
+		// }
 	};
 
 
