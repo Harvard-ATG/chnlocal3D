@@ -18,20 +18,20 @@ window.Map = (function($, pannellum) {
 		var self = this;
 		$.getJSON(this.config.panoramaConfig, function(data) {
 
-      // the next for loop is here to deal with a problem of puting a method reference
-      // as the value in the JSON data. There are probablem better ways to deal with
-      // this, but this works
+			// the next for loop is here to deal with a problem of puting a method reference
+			// as the value in the JSON data. There are probablem better ways to deal with
+			// this, but this works
 			for (var sceneID in data.scenes) {
 				var scene = data.scenes[sceneID];
 
 				scene.hotSpots.forEach(function(hotSpotDiv, indexOf ) {
-          // look for the cssClass in the JSON and add createTooltipFunc with reference
-          // to the method CLtextHotspot.
+					// look for the cssClass in the JSON and add createTooltipFunc with reference
+					// to the method CLtextHotspot.
 					if (scene.hotSpots[indexOf].cssClass ) {
 						scene.hotSpots[indexOf].createTooltipFunc = CLtextHotspot;
 				 	}
 				 });
-				}
+			}
 
 			self.panoramaData = data;
 			self.panoramaSceneId = data.default.firstScene;
@@ -81,15 +81,15 @@ window.Map = (function($, pannellum) {
 	Map.prototype.createLocationDots = function(params) {
 		// iterate through the scenes and create a location dot for each scene
 		for (var node in this.panoramaData.scenes) {
-			if (this.panoramaData.scenes.hasOwnProperty(node)  ) {
+			if (this.panoramaData.scenes.hasOwnProperty(node)	) {
 				// wconsole.log("checking out scenes ", this.panoramaData.scenes[node] );
 
 				var dot = new Dot({
-						map:      params.doc,
-						sceneID:  node,
+						map:			params.doc,
+						sceneID:	node,
 						position: this.panoramaData.scenes[node].map.position,
-						viewer:   this.viewer,
-						title:    this.panoramaData.scenes[node].title
+						viewer:	 this.viewer,
+						title:		this.panoramaData.scenes[node].title
 					});
 
 				this.mapLocations.push( dot );
@@ -116,31 +116,31 @@ window.Map = (function($, pannellum) {
 		// console.log("Map settings for scene ", this.panoramaSceneId, scene.map);
 	};
 	Map.prototype.updateMarker = function() {
-		// var sceneId = this.panoramaSceneId;
-		// var scene = this.panoramaData.scenes[sceneId];
-		// var position = scene.map && scene.map.position && scene.map.position.split(',');
-		// var panoNorthOffSet = scene.panoNorthOffSet;
-		// if(position) {
-		// 	var degrees = this.viewer.getYaw() + panoNorthOffSet + this.viewer.getNorthOffset();
-		// 	this.marker.moveTo({ x: position[0], y: position[1] });
-		// 	this.marker.rotate({ degrees: degrees });
-		// 	this.marker.show(true);
-		// 	//console.log("updateMarker(): ", sceneId, "position: ", position, "rotation:", degrees);
-		// } else {
-		// 	this.marker.show(false);
-		// 	//console.log("updateMarker(): ", sceneId, "position not defined!");
-		// }
+		var sceneId = this.panoramaSceneId;
+		var scene = this.panoramaData.scenes[sceneId];
+		var position = scene.map && scene.map.position && scene.map.position.split(',');
+		var panoNorthOffSet = scene.panoNorthOffSet;
+		if(position) {
+			var degrees = this.viewer.getYaw() + panoNorthOffSet + this.viewer.getNorthOffset();
+			this.marker.moveTo({ x: position[0], y: position[1] });
+			this.marker.rotate({ degrees: degrees });
+			this.marker.show(true);
+			//console.log("updateMarker(): ", sceneId, "position: ", position, "rotation:", degrees);
+		} else {
+			this.marker.show(false);
+			//console.log("updateMarker(): ", sceneId, "position not defined!");
+		}
 	};
 
 
 	var Dot = function( params ) {
-		this.scene    = params.sceneID;
-		this.svgMap   = params.map;
-		this.viewer   = params.viewer;
-		this.title    = params.title;
-		var position  = params.position.split(",");
-		this.x        = position[0];
-		this.y        = position[1];
+		this.scene		= params.sceneID;
+		this.svgMap	 = params.map;
+		this.viewer	 = params.viewer;
+		this.title		= params.title;
+		var position	= params.position.split(",");
+		this.x				= position[0];
+		this.y				= position[1];
 		var svgNamespace = "http://www.w3.org/2000/svg";
 
 		var shape = this.svgMap.createElementNS( svgNamespace, "g") ;
@@ -148,7 +148,7 @@ window.Map = (function($, pannellum) {
 		shape.setAttributeNS(null, 'transform', ('translate(' + (parseInt(this.x) + 18) + ',' + (parseInt(this.y) + 18) + ')') );
 		shape.addEventListener('click', () => {
 				this.viewer.loadScene( this.scene );
-  			// console.log('clicked', this.scene );
+				// console.log('clicked', this.scene );
 			});
 
 		// create the visual represenation of the marker. In this case a red dot.
@@ -157,7 +157,7 @@ window.Map = (function($, pannellum) {
 		dot.setAttributeNS(null, "r", 10);
 		dot.setAttributeNS(null, "opacity", 0.7);
 
-	  var title = this.svgMap.createElementNS(svgNamespace, "title") ;
+		var title = this.svgMap.createElementNS(svgNamespace, "title") ;
 		title.appendChild(this.svgMap.createTextNode(this.title));
 		// title.textContent( this.title );
 
@@ -180,7 +180,7 @@ window.Map = (function($, pannellum) {
 
 var Marker = function( params ) {
 	this.svgMap = params.map;
-	this.currentOrientation = 0;   //degrees
+	this.currentOrientation = 0;	 //degrees
 	var svgNamespace = "http://www.w3.org/2000/svg";
 
 	// create a container for the Marker. This will be used to position the marker on the map
