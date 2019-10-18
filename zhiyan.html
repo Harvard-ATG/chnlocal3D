@@ -8,6 +8,7 @@
   <style type="text/css">
   #inset_map {
     background-image: url('map/houwu_map.jpeg');
+    visibility: hidden;
     background-size: 100% 100%;
     float: right;
     top: -2px;
@@ -123,7 +124,7 @@
 var map = document.createElement('div');
 map.id = 'inset_map';
 map.className = 'pnlm-insetmap pnlm-controls pnlm-control';
-map.innerHTML = '<object id="mapsvg" type="image/svg+xml"></object>';
+map.innerHTML = '<object id="mapsvg" data="map/blank.svg" type="image/svg+xml" width="400" height="400"></object>';
 
 
 function CLtextHotspot(hotSpotDiv, args) {
