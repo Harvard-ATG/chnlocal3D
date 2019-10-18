@@ -8,7 +8,7 @@
 		"northOffset": -20,
 		"minPitch": -35,
 		"maxPitch": 35,
-		"hotSpotDebug": true,
+		"hotSpotDebug": false,
 		"compass": true
 	},
 
@@ -196,7 +196,7 @@
 		"position": "120,590"
 	},
 	"hotSpots": [
-		
+
 ]
 }
 }
