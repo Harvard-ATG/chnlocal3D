@@ -85,11 +85,11 @@ window.Map = (function($, pannellum) {
 				// wconsole.log("checking out scenes ", this.panoramaData.scenes[node] );
 
 				var dot = new Dot({
-						map:			params.doc,
-						sceneID:	node,
+						map:      params.doc,
+						sceneID:  node,
 						position: this.panoramaData.scenes[node].map.position,
-						viewer:	 this.viewer,
-						title:		this.panoramaData.scenes[node].title
+						viewer:   this.viewer,
+						title:    this.panoramaData.scenes[node].title
 					});
 
 				this.mapLocations.push( dot );
@@ -195,6 +195,7 @@ var Marker = function( params ) {
 	// create the visual represenation of the marker. In this case a red arrow.
 	var shape = this.svgMap.createElementNS(svgNamespace, "path");
 	shape.setAttributeNS(null, 'd', "M35,35c0-.09-17.5-35-17.53-35S0,35,0,35s4-1.68,8.76-3.76l8.73-3.78,8.71,3.78C31,33.3,34.93,35,35,35A0,0,0,0,0,35,35Z");
+	//shape.setAttributeNS(null, 'd', "M20,20,C20,19.949,10,0,9.983,0,9.966,0,0,20,0,20,0,20,2.286,19.04,5.006,17.851,L9.994,15.692,14.971,17.851,C17.714,19.029,19.96,20,20,20,L20,20Z");
 	shape.setAttributeNS(null, 'fill', 'red');
 
 	// put it all together

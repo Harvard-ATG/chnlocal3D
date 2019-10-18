@@ -1,74 +1,604 @@
 {
-	"default": {
-		"author": "Peter Bol & Michael Szonyi",
-		"firstScene": "houwu_continuing_blessing_reservoir",
-		"sceneFadeDuration": 2000,
-		"autoLoad": true,
-		"fallback": "",
-		"northOffset": -20,
-		"minPitch": -35,
-		"maxPitch": 35,
-		"hotSpotDebug": true,
-		"compass": true
-	},
+    "default": {
+        "author": "Peter Bol & Michael Szonyi",
+        "firstScene": "houwu_continuing_blessing_reservoir",
+        "sceneFadeDuration": 2000,
+        "autoLoad": true,
+        "fallback": "",
+        "northOffset": -20,
+        "minPitch": -35,
+        "maxPitch": 35,
+        "hotSpotDebug": true,
+        "compass": true
+    },
 
+    "default_extras": {
+        "firstScene": "houwu_continuing_blessing_reservoir",
+        "hotSpotDebug": true,
+        "compass": true
+    },
 
-	"scenes": {
-		"houwu_continuing_blessing_reservoir": {
-			"title": "(A)Houwu Continuing Blessing Reservoir",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/houwu/houwu_continuing_blessing_reservoir",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": 180,
-			"yaw": -77,
+    "scenes": {
+        "houwu_continuing_blessing_reservoir": {
+            "title": "(H1) Houwu Continuing Blessing Reservoir",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_continuing_blessing_reservoir",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 180,
+            "yaw": -77,
+            "map": {
+                "position": "-2,268"
+            },
+            "hotSpots": [{
+                "pitch": -15,
+                "yaw": 33,
+                "type": "scene",
+                "text": "(H2) Main Hall",
+                "sceneId": "houwu_continuing_blessing_main_hall"
+            }]
+        },
+
+        "houwu_continuing_blessing_main_hall": {
+            "title": "(H2) Houwu Continuing Blessing Main Hall",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_continuing_blessing_main_hall",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 180,
+            "yaw": -145,
 			"map": {
-				"position": "175,300"
-			},
-			"hotSpots": [
-				{
-					"pitch": -1,
-					"yaw": 27,
-					"type": "scene",
-					"text": "(B) Main Hall",
-					"sceneId": "houwu_continuing_blessing_main_hall",
-					"targetYaw": 74
-				}
-			]
-		},
-		"houwu_continuing_blessing_main_hall": {
-			"title": "(B)Houwu Continuing Blessing Main Hall",
-			"type": "multires",
-			"multiRes": {
-					"basePath": "panos/houwu/houwu_continuing_blessing_main_hall",
-					"path": "/%l/%s%y_%x",
-					"fallbackPath": "/fallback/%s",
-					"extension": "jpg",
-					"tileResolution": 512,
-					"maxLevel": 4,
-					"cubeResolution": 2224
-			},
-			"panoNorthOffSet": 180,
-			"yaw": -77,
+                "position": "-2,268"
+            },
+            "hotSpots": [{
+                    "pitch": -8,
+                    "yaw": 73,
+                    "type": "scene",
+                    "text": "(H1)Houwu Continuing Blessing Reservoir",
+                    "sceneId": "houwu_continuing_blessing_reservoir"
+                },
+                {
+                    "pitch": -8,
+                    "yaw": 83,
+                    "type": "scene",
+                    "text": "(H3) Inner Courtyard",
+                    "sceneId": "houwu_continuing_blessing_inner"
+                }
+            ]
+        },
+        "houwu_continuing_blessing_inner": {
+            "title": "(H3) Inner Courtyard",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_continuing_blessing_inner",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
 			"map": {
-				"position": "175,300"
-			},
-			"hotSpots": [
-				{
-					"pitch": -1,
-					"yaw": -124,
-					"type": "scene",
-					"text": "(A) Reservoir",
-					"sceneId": "houwu_continuing_blessing_reservoir",
-					"targetYaw": -149
-				}
-			]
-		}
-	}
+                "position": "-2,268"
+            },
+            "hotSpots": [{
+                    "pitch": -10,
+                    "yaw": -149,
+                    "type": "scene",
+                    "text": "(H2) Houwu Continuing Blessing Main Hall",
+                    "sceneId": "houwu_continuing_blessing_main_hall"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": -139,
+                    "type": "scene",
+                    "text": "(G1)Ping Shan Academy Exterior",
+                    "sceneId": "houwu_villiage_ping_shan_exterior"
+                }
+            ]
+        },
+
+        "houwu_villiage_ping_shan_exterior": {
+            "title": "(G1)Ping Shan Academy Exterior",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_villiage_ping_shan_exterior",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
+            "map": {
+				"position": "15,220"
+            },
+            "hotSpots": [{
+                    "pitch": -7,
+                    "yaw": 127,
+                    "type": "scene",
+                    "text": "(H3) Houwu Continuing Blessing Inner",
+                    "sceneId": "houwu_continuing_blessing_inner"
+                },
+
+                {
+                    "pitch": -17,
+                    "yaw": -156,
+                    "type": "scene",
+                    "text": "(G2) Ping Shan Academy",
+                    "sceneId": "houwu_villiage_pingshan_shuyu_tang"
+                }
+            ]
+        },
+        "houwu_villiage_pingshan_shuyu_tang": {
+            "title": "(G2) Ping Shan Academy",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_villiage_pingshan_shuyu_tang",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
+            "map": {
+				"position": "15,220"
+            },
+            "hotSpots": [{
+                    "pitch": -12,
+                    "yaw": 170,
+                    "type": "scene",
+                    "text": "(G1) Ping Shan Academy Exterior",
+                    "sceneId": "houwu_villiage_ping_shan_exterior"
+                },
+                {
+                    "pitch": -13,
+                    "yaw": 164,
+                    "type": "scene",
+                    "text": "(C1)Wu Yiting Exterior",
+                    "sceneId": "houwu_villiage_wu_yiting_exterior"
+                }
+            ]
+        },
+
+        "houwu_villiage_wu_yiting_exterior": {
+            "title": "(C1) Wu Yiting Exterior",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_villiage_wu_yiting_exterior",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
+            "map": {
+				"position": "123,208"
+            },
+            "hotSpots": [{
+                    "pitch": -16,
+                    "yaw": -95,
+                    "type": "scene",
+                    "text": "(G2)Ping Shan Academy",
+                    "sceneId": "houwu_villiage_pingshan_shuyu_tang"
+                },
+                {
+                    "pitch": 1,
+                    "yaw": 76,
+                    "type": "scene",
+                    "text": "(C2) Wu Yiting Front",
+                    "sceneId": "houwu_villiage_wu_yiting_front"
+                }
+            ]
+        },
+        "houwu_villiage_wu_yiting_front": {
+            "title": "(C2) Wu Yiting Front",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_villiage_wu_yiting_front",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
+            "map": {
+				"position": "123,208"
+            },
+            "hotSpots": [{
+                    "pitch": 0.2,
+                    "yaw": -94,
+                    "type": "scene",
+                    "text": "(C1) Wu Yiting Exterior",
+                    "sceneId": "houwu_villiage_wu_yiting_exterior"
+                },
+                {
+                    "pitch": 0.2,
+                    "yaw": -94,
+                    "type": "scene",
+                    "text": "(C3) Wu Yiting Middlecourt",
+                    "sceneId": "houwu_villiage_wu_yiting_middle_court"
+                }
+            ]
+        },
+        "houwu_villiage_wu_yiting_middle_court": {
+            "title": "(C3) Wu Yiting Middlecourt",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_villiage_wu_yiting_middle_court",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
+            "map": {
+				"position": "123,208"
+            },
+            "hotSpots": [{
+                    "pitch": -6,
+                    "yaw": 166,
+                    "type": "scene",
+                    "text": "(C2) Wu Yiting Front",
+                    "sceneId": "houwu_villiage_wu_yiting_front"
+                },
+                {
+                    "pitch": -0.2,
+                    "yaw": -15,
+                    "type": "scene",
+                    "text": "(C4) Wu Yiting Backhall",
+                    "sceneId": "houwu_villiage_wuyi_ting_back_hall"
+                }
+            ]
+        },
+        "houwu_villiage_wuyi_ting_back_hall": {
+            "title": "(C4) Wu Yiting Backhall",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_villiage_wuyi_ting_back_hall",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
+            "map": {
+				"position": "123,208"
+            },
+            "hotSpots": [{
+                    "pitch": -7,
+                    "yaw": -93,
+                    "type": "scene",
+                    "text": "(C3) Wu Yiting Middlecourt",
+                    "sceneId": "houwu_villiage_wu_yiting_middle_court"
+                },
+                {
+                    "pitch": -6,
+                    "yaw": -96,
+                    "type": "scene",
+                    "text": "(D1) Vice Prefect Residence Entrance",
+                    "sceneId": "houwu_villiage_vice_prefect_residence_entrance"
+                }
+            ]
+        },
+        "houwu_villiage_vice_prefect_residence_entrance": {
+            "title": "(D1) Vice Prefect Residence Entrance",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_villiage_vice_prefect_residence_entrance",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
+            "map": {
+				"position": "116,234"
+            },
+            "hotSpots": [{
+                    "pitch": -6,
+                    "yaw": 166,
+                    "type": "scene",
+                    "text": "(C4) Wu Yiting Backhall",
+                    "sceneId": "houwu_villiage_wuyi_ting_back_hall"
+                },
+                {
+                    "pitch": -22,
+                    "yaw": -58,
+                    "type": "scene",
+                    "text": "(D2) Vice Prefect Residence Inner",
+                    "sceneId": "houwu_villiage_vice_prefect_residence_inner"
+                }
+            ]
+        },
+
+        "houwu_villiage_vice_prefect_residence_inner": {
+            "title": "(D2) Vice Prefect Residence Inner",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_villiage_vice_prefect_residence_inner",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
+            "map": {
+				"position": "116,234"
+            },
+            "hotSpots": [{
+                    "pitch": -22,
+                    "yaw": -2.7,
+                    "type": "scene",
+                    "text": "(D1) Vice Prefect Residence Entrance",
+                    "sceneId": "houwu_villiage_vice_prefect_residence_entrance"
+                },
+                {
+                    "pitch": -22,
+                    "yaw": -2.7,
+                    "type": "scene",
+                    "text": "(B1) Cheng Ancestral Hall Storeyard",
+                    "sceneId": "houwu_villiage_first_cheng_ancestral_store_yard"
+                }
+            ]
+        },
+        "houwu_villiage_first_cheng_ancestral_store_yard": {
+            "title": "(B1) Cheng Ancestral Hall Storeyard",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_villiage_first_cheng_ancestral_store_yard",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
+            "map": {
+				"position": "184,167"
+            },
+
+            "hotSpots": [{
+                    "pitch": -6,
+                    "yaw": 134,
+                    "type": "scene",
+                    "text": "(D2)Houwu Vice Prefect Residence Inner",
+                    "sceneId": "houwu_villiage_vice_prefect_residence_inner"
+                },
+                {
+                    "pitch": -6,
+                    "yaw": 150,
+                    "type": "scene",
+                    "text": "(B2) Cheng Ancestral Hall Middle Yard",
+                    "sceneId": "houwu_villiage_first_cheng_ancestral_middle_yard"
+                }
+            ]
+        },
+
+        "houwu_villiage_first_cheng_ancestral_middle_yard": {
+            "title": "(B2) Cheng Ancestral Hall Middle Yard",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_villiage_first_cheng_ancestral_middle_yard",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
+            "map": {
+				"position": "184,167"
+            },
+            "hotSpots": [{
+                    "pitch": -13,
+                    "yaw": -96,
+                    "type": "scene",
+                    "text": "(B1) Cheng Ancestral Hall Storeyard",
+                    "sceneId": "houwu_villiage_first_cheng_ancestral_store_yard"
+                },
+                {
+                    "pitch": -12,
+                    "yaw": 17,
+                    "type": "scene",
+                    "text": "(B3) Cheng Ancestral Hall Back Yard",
+                    "sceneId": "houwu_villiage_first_cheng_ancestral_back_yard"
+                }
+            ]
+        },
+        "houwu_villiage_first_cheng_ancestral_back_yard": {
+            "title": "(B3) Cheng Ancestral Hall Back Yard",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_villiage_first_cheng_ancestral_back_yard",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
+            "map": {
+				"position": "184,167"
+            },
+            "hotSpots": [{
+                    "pitch": -13,
+                    "yaw": -10,
+                    "type": "scene",
+                    "text": "(B2) Cheng Ancestral Hall Middle Yard",
+                    "sceneId": "houwu_villiage_first_cheng_ancestral_middle_yard"
+                },
+                {
+                    "pitch": -15,
+                    "yaw": -18,
+                    "type": "scene",
+                    "text": "(A1) Wu Ancestral Hall Exterior",
+                    "sceneId": "houwu_villiage_wu_lineage_ancestral_exterior"
+                }
+            ]
+        },
+        "houwu_villiage_wu_lineage_ancestral_exterior": {
+            "title": "(A1) Wu Ancestral Hall Exterior",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_villiage_wu_lineage_ancestral_exterior",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
+            "map": {
+				"position": "64,84"
+            },
+            "hotSpots": [{
+                    "pitch": -13,
+                    "yaw": -10,
+                    "type": "scene",
+                    "text": "(B3) Cheng Ancestral Hall Backyard",
+                    "sceneId": "houwu_villiage_first_cheng_ancestral_back_yard"
+                },
+                {
+                    "pitch": -7,
+                    "yaw": 66,
+                    "type": "scene",
+                    "text": "(A2) Wu Ancestral Hall Front Hall",
+                    "sceneId": "houwu_villiage_wu_ancestral_hall_front"
+                }
+            ]
+        },
+        "houwu_villiage_wu_ancestral_hall_front": {
+            "title": "(A2)  Wu Ancestral Hall Front Hall",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_villiage_wu_ancestral_hall_front",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
+            "map": {
+				"position": "64,84"
+            },
+            "hotSpots": [{
+                    "pitch": -7,
+                    "yaw": 56,
+                    "type": "scene",
+                    "text": "(A1) Wu Ancestral Hall Exterior",
+                    "sceneId": "houwu_villiage_wu_lineage_ancestral_exterior"
+                },
+                {
+                    "pitch": -7,
+                    "yaw": 41,
+                    "type": "scene",
+                    "text": "(A3) Wu Ancestral Hall Middle Hall",
+                    "sceneId": "houwu_villiage_wu_ancestral_middle"
+                }
+            ]
+        },
+        "houwu_villiage_wu_ancestral_middle": {
+            "title": "(A3)  Wu Ancestral Hall Middle Hall",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_villiage_wu_ancestral_middle",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
+            "map": {
+				"position": "64,84"
+            },
+            "hotSpots": [{
+                    "pitch": -4,
+                    "yaw": 18,
+                    "type": "scene",
+                    "text": "(A2) Wu Ancestral Hall Front",
+                    "sceneId": "houwu_villiage_wu_ancestral_hall_front"
+                },
+                {
+                    "pitch": -4,
+                    "yaw": -38,
+                    "type": "scene",
+                    "text": "(A4) Wu Ancestral Hall Back Hall",
+                    "sceneId": "houwu_villiage_wu_ancestral_back"
+                }
+            ]
+        },
+        "houwu_villiage_wu_ancestral_back": {
+            "title": "(A4)  Wu Ancestral Hall Back Hall",
+            "type": "multires",
+            "multiRes": {
+                "basePath": "panos/houwu/houwu_villiage_wu_ancestral_back",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2224
+            },
+            "panoNorthOffSet": 25,
+            "yaw": -8,
+            "map": {
+				"position": "64,84"
+            },
+            "hotSpots": [
+
+            ]
+        }
+    }
 }

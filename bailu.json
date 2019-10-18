@@ -15,8 +15,8 @@
 	"default_extras": {
 		"firstScene": "Road to Bailu",
 		"hotSpotDebug": true,
-    "compass": true
-  },
+		"compass": true
+	},
 
 	"scenes": {
 		"bailu_shan_road": {
@@ -46,100 +46,100 @@
 				}
 			]
 		},
-"bailu_mountain_Hu_Jiao_Zen": {
-"title": "(B) Hujiao Zen",
-"type": "multires",
-"multiRes": {
-		"basePath": "panos/bailu/bailu_mountain_Hu_Jiao_Zen",
-		"path": "/%l/%s%y_%x",
-		"fallbackPath": "/fallback/%s",
-		"extension": "jpg",
-		"tileResolution": 512,
-		"maxLevel": 4,
-		"cubeResolution": 2224
-},
-"panoNorthOffSet": 180,
-"yaw": -77,
-"map": {
-	"position": "120,590"
-},
-"hotSpots": [
-	{
-		"pitch": -15,
-		"yaw": 33,
-		"type": "scene",
-		"text": "(A) Road to Bailu",
-		"sceneId": "bailu_shan_road"
-	},
-	{
-		"pitch": -12,
-		"yaw": -83,
-		"type": "scene",
-		"text": "(C) Hujiao Zen Temple",
-		"sceneId": "bailu_mountain_Hu_Jiao_Zen_Temple"
-	}
-	]
-},
-"bailu_mountain_Hu_Jiao_Zen_Temple": {
-	"title": "(C) Hujiao Zen Temple",
-	"type": "multires",
-	"multiRes": {
-			"basePath": "panos/bailu/bailu_mountain_Hu_Jiao_Zen_Temple",
-			"path": "/%l/%s%y_%x",
-			"fallbackPath": "/fallback/%s",
-			"extension": "jpg",
-			"tileResolution": 512,
-			"maxLevel": 4,
-			"cubeResolution": 2224
-	},
-	"panoNorthOffSet": 180,
-	"yaw": -77,
-	"map": {
-		"position": "120,590"
-	},
-	"hotSpots": [
-		{
-			"pitch": -22,
-			"yaw": -43,
-			"type": "scene",
-			"text": "(B)Hujiao Zen",
-			"sceneId": "bailu_mountain_Hu_Jiao_Zen"
+		"bailu_mountain_Hu_Jiao_Zen": {
+			"title": "(B) Hujiao Zen",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/bailu/bailu_mountain_Hu_Jiao_Zen",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -15,
+					"yaw": 33,
+					"type": "scene",
+					"text": "(A) Road to Bailu",
+					"sceneId": "bailu_shan_road"
+				},
+				{
+					"pitch": -12,
+					"yaw": -83,
+					"type": "scene",
+					"text": "(C) Hujiao Zen Temple",
+					"sceneId": "bailu_mountain_Hu_Jiao_Zen_Temple"
+				}
+				]
 		},
-		{
-			"pitch": -22,
-			"yaw": 100,
-			"type": "scene",
-			"text": "(D) Hujiao Zen Temple Buddha",
-			"sceneId": "bailu_mountain_hu_jiao_zhen_jade_buddha"
+		"bailu_mountain_Hu_Jiao_Zen_Temple": {
+			"title": "(C) Hujiao Zen Temple",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/bailu/bailu_mountain_Hu_Jiao_Zen_Temple",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -22,
+					"yaw": -43,
+					"type": "scene",
+					"text": "(B)Hujiao Zen",
+					"sceneId": "bailu_mountain_Hu_Jiao_Zen"
+				},
+				{
+					"pitch": -22,
+					"yaw": 100,
+					"type": "scene",
+					"text": "(D) Hujiao Zen Temple Buddha",
+					"sceneId": "bailu_mountain_hu_jiao_zhen_jade_buddha"
+				}
+			]
+		},
+		"bailu_mountain_hu_jiao_zhen_jade_buddha": {
+			"title": "(D) Hujiao Zen Temple Buddha",
+			"type": "multires",
+			"multiRes": {
+					"basePath": "panos/bailu/bailu_mountain_hu_jiao_zhen_jade_buddha",
+					"path": "/%l/%s%y_%x",
+					"fallbackPath": "/fallback/%s",
+					"extension": "jpg",
+					"tileResolution": 512,
+					"maxLevel": 4,
+					"cubeResolution": 2224
+			},
+			"panoNorthOffSet": 180,
+			"yaw": -77,
+			"map": {
+				"position": "120,590"
+			},
+			"hotSpots": [
+				{
+					"pitch": -10,
+					"yaw": -94,
+					"type": "scene",
+					"text": "(A)Road to Bailu",
+					"sceneId": "bailu_shan_road"
+				}
+			]
 		}
-	]
-},
-"bailu_mountain_hu_jiao_zhen_jade_buddha": {
-	"title": "(D) Hujiao Zen Temple Buddha",
-	"type": "multires",
-	"multiRes": {
-			"basePath": "panos/bailu/bailu_mountain_hu_jiao_zhen_jade_buddha",
-			"path": "/%l/%s%y_%x",
-			"fallbackPath": "/fallback/%s",
-			"extension": "jpg",
-			"tileResolution": 512,
-			"maxLevel": 4,
-			"cubeResolution": 2224
-	},
-	"panoNorthOffSet": 180,
-	"yaw": -77,
-	"map": {
-		"position": "120,590"
-	},
-	"hotSpots": [
-		{
-			"pitch": -10,
-			"yaw": -94,
-			"type": "scene",
-			"text": "(A)Road to Bailu",
-			"sceneId": "bailu_shan_road"
-		}
-	]
-}
-}
+	}
 }
