@@ -1,7 +1,7 @@
 {
     "default": {
         "author": "Peter Bol & Michael Szonyi",
-        "firstScene": "yuyuan_upper_myriad_springs_hall_entrance_hall",
+        "firstScene": "yuyuan_villiage_yu_ancestral_hall_exterior",
         "sceneFadeDuration": 2000,
         "autoLoad": true,
         "fallback": "",
